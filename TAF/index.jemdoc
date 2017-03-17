@@ -1,0 +1,30 @@
+# jemdoc: menu{MENU}{index.html}
+= Solving Systems of Random Quadratic Equations via Truncated Amplitude Flow
+Gang Wang, Georgios B. Giannakis, and Yonina C. Eldar
+
+#[https://jemnz.com/ Jacob Mattingley] ([www@jemnz.com])
+~~~
+{}{img_left}{instance.jpg}{alt text}{440}{340}
+Given observed data $\{\psi_i\}_{i=1}^m$ and feature vectors $\{a_i\in R^n/C^n\}_{i=1}^m$, our goal is to solve for $x$ a system of (phaseless) quadratic equations
+$\psi_i\approx |\langle a_i,x\rangle|$, $1\le i\le m$.
+
+Besides linear sample complexity $O(n)$ and computational complexity $O(mn)$, our Truncated Amplitude Flow (TAF) is a two-stage nonconvex solution algorithm that
+- empirically recovers $x$ exactly when the measurement\/unknown ratio $m/n$ is about 3;
+
+- surprisingly works at the information-theoretic number of equations $m=2n-1,$ as shown in the left figure.
+~~~
+
+
+~~~
+{Paper details}
+
+=== Solving Systems of Random Quadratic Equations via Truncated Amplitude Flow. 
+Authors: G. Wang, G. B. Giannakis, and Y. C. Eldar
+
+This paper puts forth a new algorithm, termed \emph{truncated amplitude flow} (TAF), to recover an unknown $n$-dimensional real-\/complex-valued vector $x$ from $m$ quadratic equations of the form $y_i=|\langle a_i,x\rangle|^2$. This problem is known to be /NP-hard/ in general. We prove that as soon as the number of equations $m$ is on the order of the number of unknowns $n$, TAF recovers the solution exactly (up to a global unimodular constant) with high probability and complexity growing linearly with the time required to read the data. Our method adopts the /amplitude-based/ cost function and proceeds in two stages: In stage one, we introduce an /orthogonality-promoting/ initialization that is obtained with a few simple power iterations. Stage two refines the initial estimate by successive updates of scalable /truncated generalized gradient iterations/. 
+The former is in sharp contrast to existing spectral initializations, while the latter handles the rather challenging nonconvex and nonsmooth amplitude-based cost function. In particular for real-valued vectors, our gradient truncation rule provably eliminates the erroneously estimated signs with high probability to markedly improve upon its untruncated version.  
+Numerical tests demonstrate that our initialization method returns more accurate and robust estimates relative to its spectral counterparts. Furthermore, even under the same initialization, our amplitude-based
+ refinement outperforms Wirtinger-based alternatives, corroborating the superior performance of TAF over state-of-the-art algorithms.
+#
+#
+~~~

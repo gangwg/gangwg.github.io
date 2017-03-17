@@ -1,0 +1,91 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<link rel="stylesheet" href="jemdoc.css" type="text/css" />
+<title>Solving Systems of Random Quadratic Equations via Truncated Amplitude Flow</title>
+</head>
+<body>
+<table summary="Table for page layout." id="tlayout">
+<tr valign="top">
+<td id="layout-menu">
+<div class="menu-category">TAF</div>
+<div class="menu-item"><a href="index.html">Paper</a></div>
+<div class="menu-item"><a href="algorithm.html">Algorithm</a></div>
+<div class="menu-item"><a href="codes.html">Matlab&nbsp;codes</a></div>
+</td>
+<td id="layout-content">
+<div id="toptitle">
+<h1>Solving Systems of Random Quadratic Equations via Truncated Amplitude Flow</h1>
+<div id="subtitle">Gang Wang, G. B. Giannakis, and Y. C. Eldar</div>
+</div>
+<p>Our method adopts the <i>amplitude-based</i> cost function and proceeds in two stages: In stage one, we introduce an <i>orthogonality-promoting</i> initialization that is obtained with a few simple power iterations. Stage two refines the initial estimate by successive updates of scalable <i>truncated generalized gradient iterations</i>. </p>
+<h2>Orthogonality-promoting initialization</h2>
+<p>Leveraging the Strong Law of Large Numbers (SLLN), spectral initialization methods estimate <img class="eq" src="eqs/15360046201-130.png" alt="x" style="vertical-align: -1px" /> as the (appropriately scaled) leading eigenvector of <img class="eq" src="eqs/7574677737587251349-130.png" alt="Y:=frac{1}{m}sum_{iin{T}_0}y_i{a}_i{a}_i^T" style="vertical-align: -9px" />, where <img class="eq" src="eqs/4068309278495548082-130.png" alt="{T}_0" style="vertical-align: -4px" /> is an index set accounting for possible data truncation. As asserted in TWF paper, each summand <img class="eq" src="eqs/8092342655025266998-130.png" alt="({a}_i^T{x})^2{a}_i{a}_i^T" style="vertical-align: -6px" /> follows a heavy-tail probability density function lacking a moment generating function. This causes major performance degradation especially when the number of measurements is small. Instead of spectral initializations, we shall take another route to bypass this hurdle. To gain intuition for our initialization, 
+a motivating example is presented first that reveals fundamental characteristics of high-dimensional random vectors.</p>
+<table class="imgtable"><tr><td>
+<img src="figures/inner.jpg" alt="alt text" width="440px" height="340px" />&nbsp;</td>
+<td align="left"><p><i>A curious experiment:</i> Fixing any nonzero vector <img class="eq" src="eqs/801408116457280862-130.png" alt="{x}in{R}^{n}" style="vertical-align: -1px" />, generate data <img class="eq" src="eqs/2044400853730096649-130.png" alt="psi_i=|langle {a}_i,{x}rangle|" style="vertical-align: -5px" /> using i.i.d. <img class="eq" src="eqs/7592594990509907102-130.png" alt="{a}_isim{N}({0},{I}_n)" style="vertical-align: -5px" />, <img class="eq" src="eqs/5525181028513403346-130.png" alt="1le ile m" style="vertical-align: -3px" />. Then evaluate the following squared normalized inner-product </p>
+
+<div class="eqwl"><img class="eqwl" src="eqs/9022656305499978567-130.png" alt="label{eq:nip} 	cos^2theta_i:= frac{left|langle {a}_i,{x}rangleright|^2}{|{a}_i|^2|{x}|^2}=frac{psi_i^2}{|{a}_i|^2|{x}|^2},quad1le ile m, " />
+<br /></div><p>where <img class="eq" src="eqs/1854661537855120596-130.png" alt="theta_i" style="vertical-align: -4px" /> is the angle between vectors <img class="eq" src="eqs/6621760205486997308-130.png" alt="{a}_i" style="vertical-align: -4px" /> and <img class="eq" src="eqs/9069124551602897893-130.png" alt="{x}" style="vertical-align: -1px" />.   
+Consider ordering all <img class="eq" src="eqs/193639516759460395-130.png" alt="{cos^2theta_i}" style="vertical-align: -5px" /> in an ascending fashion, and collectively 
+denote them as <img class="eq" src="eqs/7148505495767972956-130.png" alt="{xi}:=[cos^2theta_{[m]}~cdots~cos^2theta_{[1]}]^T" style="vertical-align: -8px" /> with 
+<img class="eq" src="eqs/1226858015667637714-130.png" alt="cos^2theta_{[1]} %gecos^2theta_{[2]} gecdotsgecos^2theta_{[m]}" style="vertical-align: -8px" />. Figure&nbsp;ref{fig:inner} plots the ordered entries in <img class="eq" src="eqs/3931975722970453892-130.png" alt="{xi}" style="vertical-align: -4px" /> for <img class="eq" src="eqs/6387157652970355989-130.png" alt="m/n" style="vertical-align: -5px" /> varying by <img class="eq" src="eqs/6400019251-130.png" alt="2" style="vertical-align: -0px" /> from <img class="eq" src="eqs/6400019251-130.png" alt="2" style="vertical-align: -0px" /> to <img class="eq" src="eqs/6272037681056609-130.png" alt="10" style="vertical-align: -1px" /> 
+%<img class="eq" src="eqs/8321060617157971650-130.png" alt="m=2n" style="vertical-align: -1px" />, <img class="eq" src="eqs/6656039988060144-130.png" alt="4n" style="vertical-align: -1px" />, <img class="eq" src="eqs/6912041526062414-130.png" alt="6n" style="vertical-align: -1px" />, <img class="eq" src="eqs/7168043064064708-130.png" alt="8n" style="vertical-align: -1px" />, and <img class="eq" src="eqs/163512108406620292-130.png" alt="10n" style="vertical-align: -1px" /> 
+with <img class="eq" src="eqs/3441946244642777895-130.png" alt="n=1,000" style="vertical-align: -4px" />. Observe that almost all 
+<img class="eq" src="eqs/3108753027261815914-130.png" alt="left{{a}_iright}" style="vertical-align: -5px" /> vectors have a squared normalized inner-product with <img class="eq" src="eqs/9069124551602897893-130.png" alt="{x}" style="vertical-align: -1px" /> 
+smaller than <img class="eq" src="eqs/3526393314174433151-130.png" alt="10^{-2}" style="vertical-align: -1px" />, while half of the inner-products are less than <img class="eq" src="eqs/3526393314173433016-130.png" alt="10^{-3}" style="vertical-align: -1px" />, which implies that <img class="eq" src="eqs/9069124551602897893-130.png" alt="{x}" style="vertical-align: -1px" /> is nearly orthogonal to a large number of 
+<img class="eq" src="eqs/6621760205486997308-130.png" alt="{a}_i" style="vertical-align: -4px" />'s.  </p>
+</td></tr></table>
+<p>This example corroborates the folklore that random vectors in high-dimensional spaces are almost always nearly orthogonal to each other.
+This inspired us to pursue an <i>orthogonality-promoting initialization method</i>. Our key idea is to approximate <img class="eq" src="eqs/9069124551602897893-130.png" alt="{x}" style="vertical-align: -1px" /> by a vector that is most orthogonal to a subset of vectors <img class="eq" src="eqs/698675597307536049-130.png" alt="{{a}_i}_{iin{I}_0}" style="vertical-align: -6px" />, where <img class="eq" src="eqs/3514872351778099499-130.png" alt="{I}_0" style="vertical-align: -4px" /> is an index set with cardinality <img class="eq" src="eqs/2859099140505838928-130.png" alt="|{I}_0|&lt;m" style="vertical-align: -5px" /> that includes indices of the smallest 
+squared normalized 
+inner-products <img class="eq" src="eqs/312306708999042359-130.png" alt="left{cos^2theta_iright}" style="vertical-align: -7px" />.</p>
+<h2>Truncated amplitude based gradient iterations</h2>
+<p>Precisely, if <img class="eq" src="eqs/6825096869137555920-130.png" alt="{z}_t" style="vertical-align: -4px" /> and <img class="eq" src="eqs/9069124551602897893-130.png" alt="{x}" style="vertical-align: -1px" /> lie in different sides of the hyperplane <img class="eq" src="eqs/2218371499266111426-130.png" alt="{a}_i^T{z}=0" style="vertical-align: -6px" />, then the sign of <img class="eq" src="eqs/2218371499300111516-130.png" alt="{a}_i^T{z}_t" style="vertical-align: -6px" /> will be different than that of <img class="eq" src="eqs/1987364219768293565-130.png" alt="{a}_i^T{x}" style="vertical-align: -6px" />; that is, <img class="eq" src="eqs/1337022892965436261-130.png" alt="frac{{a}_i^T{x}}{|{a}_i^T{x}|}ne frac{{a}_i^T{z}}{|{a}_i^T{z}|}" style="vertical-align: -16px" />. Specifically, one can re-write the <img class="eq" src="eqs/13440040424-130.png" alt="i" style="vertical-align: -1px" />-th generalized gradient component as</p>
+
+<div class="eqwl"><img class="eqwl" src="eqs/6907387787505612609-130.png" alt=" 	partial ell_i({z})=Big({a}_i^T{z}-psi_ifrac{{a}_i^T{z}}{|{a}_i^T{z}|}Big){a}_i 	=Big({a}_i^T{z}-|{a}_i^T{x}|cdotfrac{{a}_i^T{x}}{|{a}_i^T{x}|}Big){a}_i+Big(frac{{a}_i^T{x}}{|{a}_i^T{x}|}-frac{{a}_i^T{z}}{|{a}_i^T{z}|}Big)psi_i{a}_i={a}_i{a}_i^T{h}+underbrace{Big(frac{{a}_i^T{x}}{|{a}_i^T{x}|}-frac{{a}_i^T{z}}{|{a}_i^T{z}|}Big)psi_i{a}_i}_{buildreltriangleover 	 =,{r}_i} %	buildreltriangleover= {a}_i{a}_i^T{h}+{r}_i %		&amp;={a}_i{a}_i^T{h}+{Big(frac{{a}_i^T{x}}{|{a}_i^T{x}|}-frac{{a}_i^T{z}}{|{a}_i^T{z}|}Big)psi_i{a}_i} %	buildreltriangleover = {a}_i{a}_i^T{h}+{r}_i 	" />
+<br /></div><p>where <img class="eq" src="eqs/5222334020019840570-130.png" alt="{h}:={z}-{x}" style="vertical-align: -1px" />. 
+Intuitively, the SLLN asserts that averaging the first term <img class="eq" src="eqs/2734577229259597999-130.png" alt="{a}_i{a}_i^T{h}" style="vertical-align: -6px" /> over <img class="eq" src="eqs/13952041964-130.png" alt="m" style="vertical-align: -1px" /> instances approaches <img class="eq" src="eqs/9069124551618897845-130.png" alt="{h}" style="vertical-align: -1px" />, which qualifies it as a desirable search direction. However, 
+certain generalized gradient entries involve erroneously estimated signs of <img class="eq" src="eqs/1987364219768293565-130.png" alt="{a}_i^T{x}" style="vertical-align: -6px" />; hence, nonzero <img class="eq" src="eqs/1174927130934444379-130.png" alt="{r}_i" style="vertical-align: -4px" /> terms exert a negative influence on the search direction <img class="eq" src="eqs/9069124551618897845-130.png" alt="{h}" style="vertical-align: -1px" /> by dragging the iterate away from <img class="eq" src="eqs/9069124551602897893-130.png" alt="{x}" style="vertical-align: -1px" />, and they typically have sizable magnitudes.</p>
+<table class="imgtable"><tr><td>
+<img src="figures/circle.jpg" alt="alt text" width="440px" height="320px" />&nbsp;</td>
+<td align="left"><p>The geometric understanding of the proposed truncation rule on the <img class="eq" src="eqs/13440040424-130.png" alt="i" style="vertical-align: -1px" />-th gradient component involving <img class="eq" src="eqs/5555929558463303081-130.png" alt="{a}_i^T{x}=psi_i" style="vertical-align: -6px" />, where the red dot denotes the solution <img class="eq" src="eqs/9069124551602897893-130.png" alt="{x}" style="vertical-align: -1px" /> and the black one is the origin. Hyperplanes <img class="eq" src="eqs/6490027128907127975-130.png" alt="{a}_i^T{z}=psi_i" style="vertical-align: -6px" /> and <img class="eq" src="eqs/2218371499266111426-130.png" alt="{a}_i^T{z}=0" style="vertical-align: -6px" /> (of <img class="eq" src="eqs/329506999436811500-130.png" alt="{z}in{R}^n" style="vertical-align: -1px" />) passing through points <img class="eq" src="eqs/1664964341899266258-130.png" alt="{z}={x}" style="vertical-align: -1px" /> and <img class="eq" src="eqs/1664964341955266346-130.png" alt="{z}={0}" style="vertical-align: -1px" />, respectively, are shown.</p>
+</td></tr></table>
+<p>Nevertheless, it is difficult or even impossible to check whether the sign of <img class="eq" src="eqs/2218371499300111516-130.png" alt="{a}_i^T{z}_t" style="vertical-align: -6px" /> equals  that of <img class="eq" src="eqs/1987364219768293565-130.png" alt="{a}_i^T{x}" style="vertical-align: -6px" />. Fortunately, as demonstrated in Fig.&nbsp;ref{fig:truncation}, 
+most spurious generalized
+gradient components (those corrupted by nonzero <img class="eq" src="eqs/1174927130934444379-130.png" alt="{r}_i" style="vertical-align: -4px" /> terms)  hover around the watershed hyperplane <img class="eq" src="eqs/1795399250984706191-130.png" alt="{a}_i^T{z}_t=0" style="vertical-align: -6px" />. For this reason, TAF includes only those components 
+having <img class="eq" src="eqs/6825096869137555920-130.png" alt="{z}_t" style="vertical-align: -4px" /> sufficiently away from its watershed, i.e., 
+vspace{-.em}</p>
+
+<div class="eqwl"><img class="eqwl" src="eqs/4650888701765579235-130.png" alt="label{eq:large} 	{I}_{t+1}:=left{1le ile mleft|frac{|{a}_i^T{z}_t|}{|{a}_i^T{x}|}ge frac{1}{1+gamma}right. right},quad tge 0  " />
+<br /></div><p>for an appropriately selected threshold <img class="eq" src="eqs/6733157378102779079-130.png" alt="gamma&gt;0" style="vertical-align: -4px" />. To be more specific, the light yellow color-coded area denoted by <img class="eq" src="eqs/3290345541526185229-130.png" alt="xi_{i}^1" style="vertical-align: -6px" /> in Figure above 
+signifies the truncation region of <img class="eq" src="eqs/9069124551604897887-130.png" alt="{z}" style="vertical-align: -1px" />, i.e.,  
+if <img class="eq" src="eqs/6207478401783205930-130.png" alt="{z}inxi_{i}^1" style="vertical-align: -6px" /> obeying the condition above, the corresponding generalized gradient component <img class="eq" src="eqs/105113782553643204-130.png" alt="partialell_i({z};psi_i)" style="vertical-align: -5px" /> will be thrown out. However, the truncation rule may mis-reject the &lsquo;good&rsquo; gradients if <img class="eq" src="eqs/6825096869137555920-130.png" alt="{z}_t" style="vertical-align: -4px" /> lies in the upper part of <img class="eq" src="eqs/3966237977632322177-130.png" alt="xi_i^1" style="vertical-align: -6px" />; and &lsquo;bad&rsquo; gradients may be missed as well if <img class="eq" src="eqs/6825096869137555920-130.png" alt="{z}_t" style="vertical-align: -4px" /> belongs to the spherical cap <img class="eq" src="eqs/3966237977632322178-130.png" alt="xi_i^2" style="vertical-align: -6px" />.  
+Fortunately,  
+the probabilities of the miss and the mis-rejection are provably very small, hence precluding a noticeable influence on the descent direction. Although not perfect, it turns out that 
+such a regularization rule succeeds in detecting and eliminating most corrupted generalized gradient components and hence maintaining a well-behaved search direction. </p>
+<table class="imgtable"><tr><td>
+<img src="figures/tspx.jpg" alt="alt text" width="700px" height="200px" />&nbsp;</td>
+<td align="left"></td></tr></table>
+<table class="imgtable"><tr><td>
+<img src="figures/opix.jpg" alt="alt text" width="700px" height="200px" />&nbsp;</td>
+<td align="left"></td></tr></table>
+<table class="imgtable"><tr><td>
+<img src="figures/tafx.jpg" alt="alt text" width="700px" height="200px" />&nbsp;</td>
+<td align="left"></td></tr></table>
+<p>The recovered Milky Way Galaxy images after i) truncated spectral initialization (top); ii) orthogonality-promoting initialization (middle); and iii) <img class="eq" src="eqs/163512108406620378-130.png" alt="100" style="vertical-align: -1px" /> TAF gradient iterations refining the orthogonality-promoting initialization (bottom), where <img class="eq" src="eqs/7779556930678419553-130.png" alt="K=6" style="vertical-align: -1px" /> masks were employed in our experiment. Specifically, the algorithm was run independently on each of the three bands. A number <img class="eq" src="eqs/163512108406620378-130.png" alt="100" style="vertical-align: -1px" /> of power iterations were used to obtain an initialization, which was refined by <img class="eq" src="eqs/163512108406620378-130.png" alt="100" style="vertical-align: -1px" /> gradient-type iterations. The relative errors after our orthogonality-promoting initialization and after <img class="eq" src="eqs/163512108406620378-130.png" alt="100" style="vertical-align: -1px" /> TAF iterations are <img class="eq" src="eqs/5477372954246267549-130.png" alt="0.6807" style="vertical-align: -1px" /> and <img class="eq" src="eqs/90034884443849740-130.png" alt="9.8631times 10^{-5}" style="vertical-align: -1px" />, respectively. In sharp contrast, TWF returns images of corresponding relative errors <img class="eq" src="eqs/7933850345824379981-130.png" alt="1.3801" style="vertical-align: -1px" /> and <img class="eq" src="eqs/7933846345832380041-130.png" alt="1.3409" style="vertical-align: -1px" />, which are far away from the ground truth. </p>
+<div id="footer">
+<div id="footer-text">
+Page generated 2016-09-28 16:49:05 CDT, by <a href="http://jemdoc.jaboc.net/">jemdoc</a>.
+(<a href="algorithm.jemdoc">source</a>)
+</div>
+</div>
+</td>
+</tr>
+</table>
+</body>
+</html>

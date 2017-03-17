@@ -1,0 +1,59 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<link rel="stylesheet" href="jemdoc.css" type="text/css" />
+<title>Solving Systems of Random Quadratic Equations via Truncated Amplitude Flow</title>
+</head>
+<body>
+<table summary="Table for page layout." id="tlayout">
+<tr valign="top">
+<td id="layout-menu">
+<div class="menu-category">TAF</div>
+<div class="menu-item"><a href="index.html" class="current">Paper</a></div>
+<div class="menu-item"><a href="algorithm.html">Algorithm</a></div>
+<div class="menu-item"><a href="codes.html">Matlab&nbsp;codes</a></div>
+</td>
+<td id="layout-content">
+<div id="toptitle">
+<h1>Solving Systems of Random Quadratic Equations via Truncated Amplitude Flow</h1>
+<div id="subtitle">Gang Wang, Georgios B. Giannakis, and Yonina C. Eldar</div>
+</div>
+<table class="imgtable"><tr><td>
+<img src="instance.jpg" alt="alt text" width="440px" height="340px" />&nbsp;</td>
+<td align="left"><p>Given observed data <img class="eq" src="eqs/342119351564672379-130.png" alt="{psi_i}_{i=1}^m" style="vertical-align: -6px" /> and feature vectors <img class="eq" src="eqs/4520763562321757193-130.png" alt="{a_iin R^n/C^n}_{i=1}^m" style="vertical-align: -6px" />, our goal is to solve for <img class="eq" src="eqs/15360046201-130.png" alt="x" style="vertical-align: -1px" /> a system of (phaseless) quadratic equations
+<img class="eq" src="eqs/762692504893638069-130.png" alt="psi_iapprox |langle a_i,xrangle|" style="vertical-align: -5px" />, <img class="eq" src="eqs/5525181028513403346-130.png" alt="1le ile m" style="vertical-align: -3px" />.</p>
+<p>Besides linear sample complexity <img class="eq" src="eqs/3830867016983318130-130.png" alt="O(n)" style="vertical-align: -5px" /> and computational complexity <img class="eq" src="eqs/6274307959143756620-130.png" alt="O(mn)" style="vertical-align: -5px" />, our Truncated Amplitude Flow (TAF) is a two-stage nonconvex solution algorithm that</p>
+<ul>
+<li><p>empirically recovers <img class="eq" src="eqs/15360046201-130.png" alt="x" style="vertical-align: -1px" /> exactly when the measurement/unknown ratio <img class="eq" src="eqs/6387157652970355989-130.png" alt="m/n" style="vertical-align: -5px" /> is about 3;</p>
+</li>
+</ul>
+<ul>
+<li><p>surprisingly works at the information-theoretic number of equations <img class="eq" src="eqs/3143874458701575997-130.png" alt="m=2n-1," style="vertical-align: -4px" /> as shown in the left figure.</p>
+</li>
+</ul>
+</td></tr></table>
+<div class="infoblock">
+<div class="blocktitle">Paper details</div>
+<div class="blockcontent">
+<h3>Solving Systems of Random Quadratic Equations via Truncated Amplitude Flow. </h3>
+<p>Authors: G. Wang, G. B. Giannakis, and Y. C. Eldar</p>
+<p>This paper puts forth a new algorithm, termed emph{truncated amplitude flow} (TAF), to recover an unknown <img class="eq" src="eqs/14080042351-130.png" alt="n" style="vertical-align: -1px" />-dimensional real-/complex-valued vector <img class="eq" src="eqs/15360046201-130.png" alt="x" style="vertical-align: -1px" /> from <img class="eq" src="eqs/13952041964-130.png" alt="m" style="vertical-align: -1px" /> quadratic equations of the form <img class="eq" src="eqs/8898301179721397979-130.png" alt="y_i=|langle a_i,xrangle|^2" style="vertical-align: -5px" />. This problem is known to be <i>NP-hard</i> in general. We prove that as soon as the number of equations <img class="eq" src="eqs/13952041964-130.png" alt="m" style="vertical-align: -1px" /> is on the order of the number of unknowns <img class="eq" src="eqs/14080042351-130.png" alt="n" style="vertical-align: -1px" />, TAF recovers the solution exactly (up to a global unimodular constant) with high probability and complexity growing linearly with the time required to read the data. Our method adopts the <i>amplitude-based</i> cost function and proceeds in two stages: In stage one, we introduce an <i>orthogonality-promoting</i> initialization that is obtained with a few simple power iterations. Stage two refines the initial estimate by successive updates of scalable <i>truncated generalized gradient iterations</i>. 
+The former is in sharp contrast to existing spectral initializations, while the latter handles the rather challenging nonconvex and nonsmooth amplitude-based cost function. In particular for real-valued vectors, our gradient truncation rule provably eliminates the erroneously estimated signs with high probability to markedly improve upon its untruncated version.  
+Numerical tests demonstrate that our initialization method returns more accurate and robust estimates relative to its spectral counterparts. Furthermore, even under the same initialization, our amplitude-based
+refinement outperforms Wirtinger-based alternatives, corroborating the superior performance of TAF over state-of-the-art algorithms.
+
+</p>
+</div></div>
+<div id="footer">
+<div id="footer-text">
+Page generated 2016-09-28 16:49:05 CDT, by <a href="http://jemdoc.jaboc.net/">jemdoc</a>.
+</div>
+</div>
+</td>
+</tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<link rel="stylesheet" href="jemdoc.css" type="text/css" />
+<title>Solving Large-scale Systems of Random Quadratic Equations via Stochastic Truncated Amplitude Flow</title>
+</head>
+<body>
+<table summary="Table for page layout." id="tlayout">
+<tr valign="top">
+<td id="layout-menu">
+<div class="menu-category">STAF</div>
+<div class="menu-item"><a href="index.html" class="current">Paper</a></div>
+<div class="menu-item"><a href="algorithm.html">Algorithm</a></div>
+<div class="menu-item"><a href="codes.html">Matlab&nbsp;codes</a></div>
+</td>
+<td id="layout-content">
+<div id="toptitle">
+<h1>Solving Large-scale Systems of Random Quadratic Equations via Stochastic Truncated Amplitude Flow</h1>
+<div id="subtitle">Gang Wang, Georgios B. Giannakis, and Jie Chen</div>
+</div>
+<table class="imgtable"><tr><td>
+<img src="pr1000r.pdf" alt="alt text" width="440px" height="340px" />&nbsp;</td>
+<td align="left"><p>Given observed data <img class="eq" src="eqs/342119351564672379-130.png" alt="{psi_i}_{i=1}^m" style="vertical-align: -6px" /> and feature vectors <img class="eq" src="eqs/4520763562321757193-130.png" alt="{a_iin R^n/C^n}_{i=1}^m" style="vertical-align: -6px" />, our goal is to solve for <img class="eq" src="eqs/15360046201-130.png" alt="x" style="vertical-align: -1px" /> a system of (phaseless) quadratic equations
+<img class="eq" src="eqs/762692504893638069-130.png" alt="psi_iapprox |langle a_i,xrangle|" style="vertical-align: -5px" />, <img class="eq" src="eqs/5525181028513403346-130.png" alt="1le ile m" style="vertical-align: -3px" />.</p>
+<p>Besides linear sample complexity <img class="eq" src="eqs/3830867016983318130-130.png" alt="O(n)" style="vertical-align: -5px" /> and computational complexity <img class="eq" src="eqs/6274307959143756620-130.png" alt="O(mn)" style="vertical-align: -5px" />, our Stochastic Truncated Amplitude Flow (STAF) performs only stochastic iterations achieving the optimal-order iteration complexity amenable to large-scale imaging applications.</p>
+<ul>
+<li><p>empirically recovers <img class="eq" src="eqs/4410901950713339621-130.png" alt="xin R^n" style="vertical-align: -1px" /> exactly when the measurement/unknown ratio <img class="eq" src="eqs/6387157652970355989-130.png" alt="m/n" style="vertical-align: -5px" /> is about 2.3; this is in sharp contrast with 3 for TAF, 4.5 for TWF, and 7 for WF.</p>
+</li>
+</ul>
+<ul>
+<li><p>surprisingly works at the information-theoretic number of equations <img class="eq" src="eqs/524251749945116926-130.png" alt="m=2n-1" style="vertical-align: -1px" />.</p>
+</li>
+</ul>
+</td></tr></table>
+<div class="infoblock">
+<div class="blocktitle">Paper details</div>
+<div class="blockcontent">
+<h3>Solving Large-scale Systems of Random Quadratic Equations via Stochastic Truncated Amplitude Flow.</h3>
+<p>Authors: G. Wang, G. B. Giannakis, and J. Chen</p>
+<p>This paper develops a new algorithm, which we call 
+emph{stochastic truncated amplitude flow} (STAF), to reconstruct an unknown <img class="eq" src="eqs/14080042351-130.png" alt="n" style="vertical-align: -1px" />-dimensional (typically <img class="eq" src="eqs/14080042351-130.png" alt="n" style="vertical-align: -1px" /> very large) signal <img class="eq" src="eqs/15360046201-130.png" alt="x" style="vertical-align: -1px" /> from <img class="eq" src="eqs/13952041964-130.png" alt="m" style="vertical-align: -1px" /> phaseless quadratic equations of the form <img class="eq" src="eqs/8897557142891189621-130.png" alt="psi_i=|langle a_i,xrangle|" style="vertical-align: -5px" />. 
+This problem, also known as phase retrieval, is emph{NP-hard} in general.
+Adopting an amplitude-based nonconvex formulation, STAF is an iterative solution algorithm comprising two stages: s1) The first stage employs a stochastic variance reduced gradient algorithm to solve for an orthogonality-promoting initialization; and, s2) the second stage iteratively refines the initialization using stochastic truncated amplitude-based gradient iterations. Both stages process a single equation per iteration, thus rendering STAF a simple, scalable, and fast algorithm amenable to large-scale implementations. 
+Under the Gaussian random <img class="eq" src="eqs/1453079729247098462-130.png" alt="a_i" style="vertical-align: -4px" /> designs, we prove that STAF recovers exactly any signal <img class="eq" src="eqs/4410901950713339621-130.png" alt="xin R^n" style="vertical-align: -1px" /> exponentially fast from on the order of <img class="eq" src="eqs/14080042351-130.png" alt="n" style="vertical-align: -1px" /> quadratic equations.  
+STAF is also robust vis-{`a}-vis additive noise of bounded support.  
+Simulated tests using the real Gaussian <img class="eq" src="eqs/1453079729247098462-130.png" alt="a_i" style="vertical-align: -4px" /> designs
+demonstrate that STAF empirically reconstructs any <img class="eq" src="eqs/4410901950713339621-130.png" alt="xin R^n" style="vertical-align: -1px" /> exactly from about <img class="eq" src="eqs/4814055714749610747-130.png" alt="2.3n" style="vertical-align: -1px" /> magnitude-only measurements, outperforming the-state-of-arts and narrowing the gap from the information-theoretic number of quadratic equations <img class="eq" src="eqs/524251749945116926-130.png" alt="m=2n-1" style="vertical-align: -1px" />. Extensive experiments using synthetic data and real images  corroborate markedly improved performance of STAF over  existing alternatives.  
+
+</p>
+</div></div>
+<div id="footer">
+<div id="footer-text">
+Page generated 2016-08-27 02:20:41 CDT, by <a href="http://jemdoc.jaboc.net/">jemdoc</a>.
+</div>
+</div>
+</td>
+</tr>
+</table>
+</body>
+</html>

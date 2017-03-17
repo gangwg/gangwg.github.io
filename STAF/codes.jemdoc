@@ -1,0 +1,14 @@
+# jemdoc: menu{MENU}{index.html}
+= Matlab codes
+Gang Wang, Georgios B. Giannakis, and Jie Chen
+
+The Matlab implementations of STAF can be downloaded here. 
+The codes are adapted from the /(truncated) Wirtinger flow codes/ implemented by E. J. Candes, X. Li, M. Soltanolkotabi, and Y. Chen.
+
+- [codes/staf/STAF1D.m 1D STAF (for vectors)]
+- [codes/staf/Gaussian1D.m 1D example using Gaussian measurements]
+#- Empirical success rates of TAF, WF and TWF for Gaussian random designs 
+
+If more is necessary, please write me at /gangwang@umn.edu/.
+
+

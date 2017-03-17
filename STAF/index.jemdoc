@@ -1,0 +1,35 @@
+# jemdoc: menu{MENU}{index.html}
+= Solving Large-scale Systems of Random Quadratic Equations via Stochastic Truncated Amplitude Flow
+Gang Wang, Georgios B. Giannakis, and Jie Chen
+
+#[https://jemnz.com/ Jacob Mattingley] ([www@jemnz.com])
+~~~
+{}{img_left}{pr1000r.pdf}{alt text}{440}{340}
+Given observed data $\{\psi_i\}_{i=1}^m$ and feature vectors $\{a_i\in R^n/C^n\}_{i=1}^m$, our goal is to solve for $x$ a system of (phaseless) quadratic equations
+$\psi_i\approx |\langle a_i,x\rangle|$, $1\le i\le m$.
+
+Besides linear sample complexity $O(n)$ and computational complexity $O(mn)$, our Stochastic Truncated Amplitude Flow (STAF) performs only stochastic iterations achieving the optimal-order iteration complexity amenable to large-scale imaging applications.
+- empirically recovers $x\in R^n$ exactly when the measurement\/unknown ratio $m/n$ is about 2.3; this is in sharp contrast with 3 for TAF, 4.5 for TWF, and 7 for WF.
+
+- surprisingly works at the information-theoretic number of equations $m=2n-1$.
+~~~
+
+
+~~~
+{Paper details}
+
+=== Solving Large-scale Systems of Random Quadratic Equations via Stochastic Truncated Amplitude Flow.
+
+Authors: G. Wang, G. B. Giannakis, and J. Chen
+
+This paper develops a new algorithm, which we call 
+\emph{stochastic truncated amplitude flow} (STAF), to reconstruct an unknown $n$-dimensional (typically $n$ very large) signal $x$ from $m$ phaseless quadratic equations of the form $\psi_i=|\langle a_i,x\rangle|$. 
+This problem, also known as phase retrieval, is \emph{NP-hard} in general.
+Adopting an amplitude-based nonconvex formulation, STAF is an iterative solution algorithm comprising two stages: s1) The first stage employs a stochastic variance reduced gradient algorithm to solve for an orthogonality-promoting initialization; and, s2) the second stage iteratively refines the initialization using stochastic truncated amplitude-based gradient iterations. Both stages process a single equation per iteration, thus rendering STAF a simple, scalable, and fast algorithm amenable to large-scale implementations. 
+Under the Gaussian random $a_i$ designs, we prove that STAF recovers exactly any signal $x\in R^n$ exponentially fast from on the order of $n$ quadratic equations.  
+STAF is also robust vis-{\`a}-vis additive noise of bounded support.  
+Simulated tests using the real Gaussian $a_i$ designs
+demonstrate that STAF empirically reconstructs any $x\in R^n$ exactly from about $2.3n$ magnitude-only measurements, outperforming the-state-of-arts and narrowing the gap from the information-theoretic number of quadratic equations $m=2n-1$. Extensive experiments using synthetic data and real images  corroborate markedly improved performance of STAF over  existing alternatives.  
+#
+#
+~~~

@@ -1,0 +1,16 @@
+# jemdoc: menu{MENU}{index.html}
+= Matlab codes
+Gang Wang, Georgios B. Giannakis, and Yonina C. Eldar
+
+Matlab implementations of TAF can be downloaded here. The codes are adapted from the /(truncated) Wirtinger flow codes/ implemented by E. J. Candes, X. Li, M. Soltanolkotabi, and Y. Chen.
+
+- [codes/taf/TAF1D.m 1D TAF (for vectors)]
+- [codes/taf/Gaussian1D.m 1D example using Gaussian measurements]
+- [codes/taf/TAF2D.m 2D TAF (for matrices)] 
+- [codes/taf/imagetest.m 2D image recovery of 2D TAF using coded diffraction patterns of the Milky Way Galaxy image] 
+- [codes/taf/galaxy.jpg Milky Way Galaxy image]
+#- Empirical success rates of TAF, WF and TWF for Gaussian random designs 
+
+If more is necessary, please write me at /gangwang@umn.edu/.
+
+

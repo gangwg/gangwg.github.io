@@ -1,0 +1,36 @@
+# jemdoc: menu{MENU}{research.html}, showsource
+= Research
+
+My research interests include
+- High-dimensional structured estimation (e.g., phase retrieval, matrix completion)
+- Signal processing and convex/nonconvex optimization for smart power grids
+- Millimeter-wave massive MIMO communication
+
+== Solving large-scale quadratic systems in linear time
+The problem of solving systems of quadratic equations has a plethora of applications ranging from mixed linear regressions to the well-known phase retrieval. Under Gaussian random sampling\/feature vectors, we develop simple, scalable, and efficient iterative optimization algorithms that are able to solve a quadratic system when there are about as many equations as unknowns in linear time. It is known in statistical inference and learning that convex formulations are unbounded and thus sensitive to outliers, yet nonconvex ones that are difficult to optimize lead to computationally more scalable and statistically more accurate solution algorithms. We formulate the problem of solving quadratic equations as a nonconvex optimization, and develop two-stage iterative optimization algorithms, that consist of obtaining an orthogonality-promoting initialization first and refining the initialization via truncated\/stochastic gradient-type iterations. Empirically, our algorithms recover exactly any real-valued signals when the number of equations is about 3 times the number of unknowns, narrowing the gap from the information-theoretic measurement/unknown ratio 2.
+
+~~~
+{}{img_left}{figures/irate.jpg}{alt text}{440}{340} 
+#{}{img_left}{figures/crate.jpg}{alt text}{440}{340}
+~~~
+
+. G. Wang, G. B. Giannakis, and Y. C. Eldar, ``Solving Systems of Random Quadratic Equations via Truncated Amplitude Flow,’’ /IEEE Transactions on Information Theory/, submitted July 2016. [papers/taf2016 (Preprint)]. 
+. G. Wang and G. B. Giannakis, ``Solving Random Systems of Quadratic Equations via Truncated Generalized Gradient Flow,’’ in /The Thirtieth Annual Conf. on Neural Information Processing Systems/, Barcelona, Spain, December 5-10, 2016 [https://arxiv.org/abs/1605.08285 (Preprint)]. 
+
+
+== Stochastic energy management in power distribution grids
+
+Distribution microgrids are currently being challenged by voltage fluctuations due to renewable generation, demand response, and electric vehicles. Advances in photovoltaic (PV) inverters offer new opportunities for reactive power management, provided PV owners have the right investment incentives. Accounting for the increasing time-variability of distributed generation and demand, a stochastic reactive power compensation scheme is developed. The scheme is distribution-free, and it relies solely on real-time power injection data. Numerical tests on an industrial 47-bus microgrid and the residential IEEE 123-bus feeder corroborate its superiority over its deterministic alternative, as well as its capability to track variations in solar generation and household demand.
+
+~~~
+{}{img_left}{figures/movie.jpg}{alt text}{700}{340}
+~~~
+
+. V. Kekatos, G. Wang, A.-J. Conejo, and G. B. Giannakis, "Stochastic Reactive Power Management in Microgrids with Renewables," /IEEE Trans. on Power Systems/, vol. 30, no. 6, pp. 3386–3395, Aug. 2014. [papers/tps2015kwcg.pdf (pdf)]
+. V. Kekatos, G. Wang, and G. B. Giannakis, "Stochastic Loss Minimization for Power Distribution Networks," in /IEEE North American Power Symposium (NAPS)/, Pullman, WA, Sep. 2014. [papers/naps2014kwg.pdf (pdf)]
+. G. Wang, V. Kekatos, A.-J. Conejo, and G. B. Giannakis, ‘‘Ergodic Energy Management Leveraging Resource Variability in Distribution Grids,’’ /IEEE Transactions on Power Systems/, to appear June 2016. [papers/tps2016wkcg.pdf (pdf)]
+. G. Wang, V. Kekatos, and G. B. Giannakis, ‘‘Stochastic Energy Management in Distribution Grids,’’ in /Proc. of Intl. Conf. on Acoustics, Speech and Signal Processing/, Shanghai, China, March 20-25, 2016. [papers/icassp2016wkg.pdf (pdf)]
+
+#== Power system state estimation
+
+

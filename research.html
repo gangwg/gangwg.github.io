@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<link rel="stylesheet" href="jemdoc.css" type="text/css" />
+<title>Research</title>
+</head>
+<body>
+<table summary="Table for page layout." id="tlayout">
+<tr valign="top">
+<td id="layout-menu">
+<div class="menu-category">Gang Wang</div>
+<div class="menu-item"><a href="index.html">Home</a></div>
+<div class="menu-item"><a href="education.html">Education</a></div>
+<div class="menu-item"><a href="figures/cv_gangwang.pdf">Curriculum&nbsp;Vitae</a></div>
+<div class="menu-item"><a href="publications.html">Publications</a></div>
+<div class="menu-item"><a href="research.html" class="current">Research</a></div>
+</td>
+<td id="layout-content">
+<div id="toptitle">
+<h1>Research</h1>
+</div>
+<p>My research interests include</p>
+<ul>
+<li><p>High-dimensional structured estimation (e.g., phase retrieval, matrix completion)</p>
+</li>
+<li><p>Signal processing and convex/nonconvex optimization for smart power grids</p>
+</li>
+<li><p>Millimeter-wave massive MIMO communication</p>
+</li>
+</ul>
+<h2>Solving large-scale quadratic systems in linear time</h2>
+<p>The problem of solving systems of quadratic equations has a plethora of applications ranging from mixed linear regressions to the well-known phase retrieval. Under Gaussian random sampling/feature vectors, we develop simple, scalable, and efficient iterative optimization algorithms that are able to solve a quadratic system when there are about as many equations as unknowns in linear time. It is known in statistical inference and learning that convex formulations are unbounded and thus sensitive to outliers, yet nonconvex ones that are difficult to optimize lead to computationally more scalable and statistically more accurate solution algorithms. We formulate the problem of solving quadratic equations as a nonconvex optimization, and develop two-stage iterative optimization algorithms, that consist of obtaining an orthogonality-promoting initialization first and refining the initialization via truncated/stochastic gradient-type iterations. Empirically, our algorithms recover exactly any real-valued signals when the number of equations is about 3 times the number of unknowns, narrowing the gap from the information-theoretic measurement/unknown ratio 2.</p>
+<table class="imgtable"><tr><td>
+<img src="figures/irate.jpg" alt="alt text" width="440px" height="340px" />&nbsp;</td>
+<td align="left"></td></tr></table>
+<ol>
+<li><p>G. Wang, G. B. Giannakis, and Y. C. Eldar, &lsquo;&lsquo;Solving Systems of Random Quadratic Equations via Truncated Amplitude Flow,’’ <i>IEEE Transactions on Information Theory</i>, submitted July 2016. <a href="papers/taf2016">(Preprint)</a>. </p>
+</li>
+<li><p>G. Wang and G. B. Giannakis, &lsquo;&lsquo;Solving Random Systems of Quadratic Equations via Truncated Generalized Gradient Flow,’’ in <i>The Thirtieth Annual Conf. on Neural Information Processing Systems</i>, Barcelona, Spain, December 5-10, 2016 <a href="https://arxiv.org/abs/1605.08285">(Preprint)</a>. </p>
+</li>
+</ol>
+<h2>Stochastic energy management in power distribution grids</h2>
+<p>Distribution microgrids are currently being challenged by voltage fluctuations due to renewable generation, demand response, and electric vehicles. Advances in photovoltaic (PV) inverters offer new opportunities for reactive power management, provided PV owners have the right investment incentives. Accounting for the increasing time-variability of distributed generation and demand, a stochastic reactive power compensation scheme is developed. The scheme is distribution-free, and it relies solely on real-time power injection data. Numerical tests on an industrial 47-bus microgrid and the residential IEEE 123-bus feeder corroborate its superiority over its deterministic alternative, as well as its capability to track variations in solar generation and household demand.</p>
+<table class="imgtable"><tr><td>
+<img src="figures/movie.jpg" alt="alt text" width="700px" height="340px" />&nbsp;</td>
+<td align="left"></td></tr></table>
+<ol>
+<li><p>V. Kekatos, G. Wang, A.-J. Conejo, and G. B. Giannakis, &ldquo;Stochastic Reactive Power Management in Microgrids with Renewables,&rdquo; <i>IEEE Trans. on Power Systems</i>, vol. 30, no. 6, pp. 3386–3395, Aug. 2014. <a href="papers/tps2015kwcg.pdf">(pdf)</a></p>
+</li>
+<li><p>V. Kekatos, G. Wang, and G. B. Giannakis, &ldquo;Stochastic Loss Minimization for Power Distribution Networks,&rdquo; in <i>IEEE North American Power Symposium (NAPS)</i>, Pullman, WA, Sep. 2014. <a href="papers/naps2014kwg.pdf">(pdf)</a></p>
+</li>
+<li><p>G. Wang, V. Kekatos, A.-J. Conejo, and G. B. Giannakis, ‘‘Ergodic Energy Management Leveraging Resource Variability in Distribution Grids,’’ <i>IEEE Transactions on Power Systems</i>, to appear June 2016. <a href="papers/tps2016wkcg.pdf">(pdf)</a></p>
+</li>
+<li><p>G. Wang, V. Kekatos, and G. B. Giannakis, ‘‘Stochastic Energy Management in Distribution Grids,’’ in <i>Proc. of Intl. Conf. on Acoustics, Speech and Signal Processing</i>, Shanghai, China, March 20-25, 2016. <a href="papers/icassp2016wkg.pdf">(pdf)</a></p>
+</li>
+</ol>
+<div id="footer">
+<div id="footer-text">
+Page generated 2017-01-22 14:31:07 CST, by <a href="http://jemdoc.jaboc.net/">jemdoc</a>.
+(<a href="research.jemdoc">source</a>)
+</div>
+</div>
+</td>
+</tr>
+</table>
+</body>
+</html>
