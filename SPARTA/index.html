@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<link rel="stylesheet" href="jemdoc.css" type="text/css" />
+<title>Sparse Phase Retrieval via Truncated Amplitude Flow</title>
+</head>
+<body>
+<table summary="Table for page layout." id="tlayout">
+<tr valign="top">
+<td id="layout-menu">
+<div class="menu-category">SPARTA</div>
+<div class="menu-item"><a href="index.html" class="current">Paper</a></div>
+<div class="menu-item"><a href="codes.html">Matlab&nbsp;codes</a></div>
+</td>
+<td id="layout-content">
+<div id="toptitle">
+<h1>Sparse Phase Retrieval via Truncated Amplitude Flow</h1>
+</div>
+<table class="imgtable"><tr><td>
+<img src="spr1000rx.pdf" alt="alt text" width="440px" height="340px" />&nbsp;</td>
+<td align="left"><p>Given observed data <img class="eq" src="eqs/342119351564672379-130.png" alt="{psi_i}_{i=1}^m" style="vertical-align: -6px" /> and feature vectors <img class="eq" src="eqs/4520763562321757193-130.png" alt="{a_iin R^n/C^n}_{i=1}^m" style="vertical-align: -6px" />, our goal is to solve for a <img class="eq" src="eqs/13696041194-130.png" alt="k" style="vertical-align: -1px" />-sparse <img class="eq" src="eqs/15360046201-130.png" alt="x" style="vertical-align: -1px" /> from a system of (phaseless) quadratic equations
+<img class="eq" src="eqs/762692504893638069-130.png" alt="psi_iapprox |langle a_i,xrangle|" style="vertical-align: -5px" />, <img class="eq" src="eqs/5525181028513403346-130.png" alt="1le ile m" style="vertical-align: -3px" />.</p>
+<p>Besides linear sample complexity <img class="eq" src="eqs/3957844912612665251-130.png" alt="O(k^2log n)" style="vertical-align: -5px" /> and computational complexity <img class="eq" src="eqs/2743284257490019474-130.png" alt="O(k^2nlog n)" style="vertical-align: -5px" />, our SPARTA provably recovers the true solution exactly.</p>
+</td></tr></table>
+<h3>Sparse Phase Retrieval via Truncated Amplitude Flow.</h3>
+<p>Authors: G. Wang, L. Zhang, G. B. Giannakis, M. Akcakaya, and J. Chen</p>
+<p>This paper develops a novel algorithm, termed emph{SPARse Truncated Amplitude flow} (SPARTA), to reconstruct a sparse signal from a small number of magnitude-only measurements. It deals with what is also known as sparse phase retrieval (PR), which is emph{NP-hard} in general and emerges in many science and engineering applications. Upon formulating sparse PR as an amplitude-based nonconvex optimization task, SPARTA works iteratively in two stages: In stage one, the support of the underlying sparse signal is recovered using an analytically well-justified rule, and subsequently a sparse orthogonality-promoting initialization is obtained via power iterations restricted on the support; and, in stage two, the initialization is successively refined by means of hard thresholding based truncated gradient iterations. SPARTA is a simple yet effective, scalable, and fast sparse PR solver. On the theoretical side, for any <img class="eq" src="eqs/14080042351-130.png" alt="n" style="vertical-align: -1px" />-dimensional <img class="eq" src="eqs/13696041194-130.png" alt="k" style="vertical-align: -1px" />-sparse (<img class="eq" src="eqs/8303955282502213389-130.png" alt="kll n" style="vertical-align: -2px" />) signal <img class="eq" src="eqs/15360046201-130.png" alt="x" style="vertical-align: -1px" /> with minimum (in modulus) nonzero entries on the order of <img class="eq" src="eqs/7188741087973208618-130.png" alt="(1/sqrt{k})|x|_2" style="vertical-align: -5px" />, SPARTA recovers the signal exactly (up to a global unimodular constant) from about <img class="eq" src="eqs/3184001343123864382-130.png" alt="k^2log n" style="vertical-align: -4px" /> random Gaussian measurements with high probability. Furthermore, SPARTA incurs computational complexity on the order of <img class="eq" src="eqs/7909736819706174761-130.png" alt="k^2nlog n" style="vertical-align: -4px" /> with total runtime proportional to the time required to read the data, which improves upon the state-of-the-art by at least a factor of <img class="eq" src="eqs/13696041194-130.png" alt="k" style="vertical-align: -1px" />. Finally, SPARTA is robust against additive noise of bounded support. Extensive numerical tests corroborate markedly improved recovery performance and speedups of SPARTA relative to existing alternatives. </p>
+<div class="infoblock">
+<div class="blockcontent">
+<div id="footer">
+<div id="footer-text">
+Page generated 2017-05-05 20:46:26 CDT, by <a href="http://jemdoc.jaboc.net/">jemdoc</a>.
+</div>
+</div>
+</td>
+</tr>
+</table>
+</body>
+</html>
