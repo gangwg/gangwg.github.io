@@ -8,7 +8,7 @@
 Given observed data $\{\psi_i\}_{i=1}^m$ and feature vectors $\{a_i\in R^n/C^n\}_{i=1}^m$, our goal is to solve for a $k$-sparse $x$ from a system of (phaseless) quadratic equations
 $\psi_i\approx |\langle a_i,x\rangle|$, $1\le i\le m$.
 
-Besides linear sample complexity $O(k^2\log n)$ and computational complexity $O(k^2n\log n)$, our SPARTA provably recovers the true solution exactly.
+With sample complexity $O(k^2\log n)$ and computational complexity $O(k^2n\log n)$, our SPARTA provably recovers the true solution exactly.
 
 
 ~~~
