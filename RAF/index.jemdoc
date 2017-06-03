@@ -1,0 +1,32 @@
+# jemdoc: menu{MENU}{index.html}
+= Solving Almost all Systems of Random Quadratic Equations
+
+
+#[https://jemnz.com/ Jacob Mattingley] ([www@jemnz.com])
+~~~
+{}{img_left}{func400.pdf}{alt text}{460}{330}
+
+To show the power of RAF in the high-dimensional regime, the amplitude-based least-squares loss function value $L(z)$ evaluated at the returned estimate $z^T$ for $400$ MC realizations is plotted (in negative logarithmic scale) in figure on the left, where the number of simulated noiseless measurements was set to be the information-theoretic limit, namely,  $a_i\sim\mathcal{N}(0,I_{5,000})$, and $m=2n-1=3,999$ for $n=2,000$. It is self-evident that our proposed RAF approach returns a solution of function value $L(z^T)$ smaller than $10^{-25}$ in all $400$ independent realizations even at this challenging information-theoretic limit condition. To the best of our knowledge, RAF is the first algorithm that empirically reconstructs any high-dimensional (say e.g., $n\ge 1,500$) signals exactly from an \emph{optimal number} of random quadratic equations, which also provides a positive answer to the question posed easier in the Introduction. 
+~~~
+
+
+~~~
+{}{img_left}{rratenew.pdf}{alt text}{450}{315}
+
+The left figure compares the empirical success rate of five schemes 
+with the signal dimension being fixed at $n=1,000$ while the ratio
+$m/n$ increasing by $0.1$ from $1$ to $5$. As clearly depicted by the plots, our RAF (the red plot) enjoys markedly improved performance over its competing alternatives. Moreover, it also achieves $100\%$ perfect signal recovery as soon as $m$ is about $2n$, where the others do not work (well).
+~~~
+
+~~~
+{Paper details}
+
+=== Solving Almost all Systems of Random Quadratic Equations
+
+Authors: G. Wang, G. B. Giannakis, Y. Saad, and J. Chen
+
+This paper deals with finding an $n$-dimensional solution $x$ to a system of quadratic equations of the form $y_i=|\langle a_i,x\rangle|^2$ for $1\le i \le m$, which is also known as phase retrieval and is NP-hard in general. We put forth a novel procedure for minimizing the amplitude-based least-squares empirical loss, that starts with a weighted maximal correlation initialization obtainable with a few power or Lanczos iterations, followed by successive refinements based upon a sequence of iteratively reweighted (generalized) gradient iterations. The two (both the initialization and gradient flow) stages distinguish themselves from prior contributions by the inclusion of a fresh (re)weighting regularization technique. The overall algorithm is conceptually simple, numerically scalable, and easy-to-implement. For certain random measurement models, the novel procedure is shown capable of finding the true solution $x$ in time proportional to reading the data $\{(a_i;y_i)\}_{1\le i \le m}$. This holds with high probability and without extra assumption on the signal $x$ to be recovered, provided that the number $m$ of equations is some constant $c>0$ times the number $n$ of unknowns in the signal vector, namely, $m>cn$. Empirically, the upshots of this contribution are: i) (almost) $100\%$ perfect signal recovery in the high-dimensional (say e.g., $n\ge 2,000$) regime given only an \emph{information-theoretic limit} number of noiseless equations, namely, $m=2n-1$ in the real-valued Gaussian case; and, ii) (nearly) optimal statistical accuracy in the presence of additive noise of bounded support. Finally, substantial numerical tests using both synthetic data and real images corroborate markedly improved signal recovery performance and computational efficiency of our novel procedure relative to state-of-the-art approaches. 
+ 
+#
+#
+~~~

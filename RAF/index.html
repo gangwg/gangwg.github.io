@@ -1,0 +1,48 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<link rel="stylesheet" href="jemdoc.css" type="text/css" />
+<title>Solving Almost all Systems of Random Quadratic Equations</title>
+</head>
+<body>
+<table summary="Table for page layout." id="tlayout">
+<tr valign="top">
+<td id="layout-menu">
+<div class="menu-category">SPARTA</div>
+<div class="menu-item"><a href="index.html" class="current">Paper</a></div>
+<div class="menu-item"><a href="codes.html">Matlab&nbsp;codes</a></div>
+</td>
+<td id="layout-content">
+<div id="toptitle">
+<h1>Solving Almost all Systems of Random Quadratic Equations</h1>
+</div>
+<table class="imgtable"><tr><td>
+<img src="func400.pdf" alt="alt text" width="460px" height="330px" />&nbsp;</td>
+<td align="left"><p>To show the power of RAF in the high-dimensional regime, the amplitude-based least-squares loss function value <img class="eq" src="eqs/2152200665276412919-130.png" alt="L(z)" style="vertical-align: -5px" /> evaluated at the returned estimate <img class="eq" src="eqs/8251564009687796153-130.png" alt="z^T" style="vertical-align: -1px" /> for <img class="eq" src="eqs/3214654429107953097-130.png" alt="400" style="vertical-align: -1px" /> MC realizations is plotted (in negative logarithmic scale) in figure on the left, where the number of simulated noiseless measurements was set to be the information-theoretic limit, namely,  <img class="eq" src="eqs/6660376927118737735-130.png" alt="a_isimmathcal{N}(0,I_{5,000})" style="vertical-align: -6px" />, and <img class="eq" src="eqs/1843828233786173179-130.png" alt="m=2n-1=3,999" style="vertical-align: -4px" /> for <img class="eq" src="eqs/3673087653283391356-130.png" alt="n=2,000" style="vertical-align: -4px" />. It is self-evident that our proposed RAF approach returns a solution of function value <img class="eq" src="eqs/2081713843381858727-130.png" alt="L(z^T)" style="vertical-align: -5px" /> smaller than <img class="eq" src="eqs/4830984458258476571-130.png" alt="10^{-25}" style="vertical-align: -1px" /> in all <img class="eq" src="eqs/3214654429107953097-130.png" alt="400" style="vertical-align: -1px" /> independent realizations even at this challenging information-theoretic limit condition. To the best of our knowledge, RAF is the first algorithm that empirically reconstructs any high-dimensional (say e.g., <img class="eq" src="eqs/2673222801904322584-130.png" alt="nge 1,500" style="vertical-align: -4px" />) signals exactly from an emph{optimal number} of random quadratic equations, which also provides a positive answer to the question posed easier in the Introduction. </p>
+</td></tr></table>
+<table class="imgtable"><tr><td>
+<img src="rratenew.pdf" alt="alt text" width="450px" height="315px" />&nbsp;</td>
+<td align="left"><p>The left figure compares the empirical success rate of five schemes 
+with the signal dimension being fixed at <img class="eq" src="eqs/3441946244642777895-130.png" alt="n=1,000" style="vertical-align: -4px" /> while the ratio
+<img class="eq" src="eqs/6387157652970355989-130.png" alt="m/n" style="vertical-align: -5px" /> increasing by <img class="eq" src="eqs/1289567620941478280-130.png" alt="0.1" style="vertical-align: -1px" /> from <img class="eq" src="eqs/6272018864-130.png" alt="1" style="vertical-align: -0px" /> to <img class="eq" src="eqs/6784020404-130.png" alt="5" style="vertical-align: -1px" />. As clearly depicted by the plots, our RAF (the red plot) enjoys markedly improved performance over its competing alternatives. Moreover, it also achieves <img class="eq" src="eqs/4461916972778738597-130.png" alt="100%" style="vertical-align: -1px" /> perfect signal recovery as soon as <img class="eq" src="eqs/13952041964-130.png" alt="m" style="vertical-align: -1px" /> is about <img class="eq" src="eqs/6400038450057850-130.png" alt="2n" style="vertical-align: -1px" />, where the others do not work (well).</p>
+</td></tr></table>
+<div class="infoblock">
+<div class="blocktitle">Paper details</div>
+<div class="blockcontent">
+<h3>Solving Almost all Systems of Random Quadratic Equations</h3>
+<p>Authors: G. Wang, G. B. Giannakis, Y. Saad, and J. Chen</p>
+<p>This paper deals with finding an <img class="eq" src="eqs/14080042351-130.png" alt="n" style="vertical-align: -1px" />-dimensional solution <img class="eq" src="eqs/15360046201-130.png" alt="x" style="vertical-align: -1px" /> to a system of quadratic equations of the form <img class="eq" src="eqs/8898301179721397979-130.png" alt="y_i=|langle a_i,xrangle|^2" style="vertical-align: -5px" /> for <img class="eq" src="eqs/7323893354753058125-130.png" alt="1le i le m" style="vertical-align: -3px" />, which is also known as phase retrieval and is NP-hard in general. We put forth a novel procedure for minimizing the amplitude-based least-squares empirical loss, that starts with a weighted maximal correlation initialization obtainable with a few power or Lanczos iterations, followed by successive refinements based upon a sequence of iteratively reweighted (generalized) gradient iterations. The two (both the initialization and gradient flow) stages distinguish themselves from prior contributions by the inclusion of a fresh (re)weighting regularization technique. The overall algorithm is conceptually simple, numerically scalable, and easy-to-implement. For certain random measurement models, the novel procedure is shown capable of finding the true solution <img class="eq" src="eqs/15360046201-130.png" alt="x" style="vertical-align: -1px" /> in time proportional to reading the data <img class="eq" src="eqs/1092490834541612992-130.png" alt="{(a_i;y_i)}_{1le i le m}" style="vertical-align: -6px" />. This holds with high probability and without extra assumption on the signal <img class="eq" src="eqs/15360046201-130.png" alt="x" style="vertical-align: -1px" /> to be recovered, provided that the number <img class="eq" src="eqs/13952041964-130.png" alt="m" style="vertical-align: -1px" /> of equations is some constant <img class="eq" src="eqs/799031295741617162-130.png" alt="c&gt;0" style="vertical-align: -1px" /> times the number <img class="eq" src="eqs/14080042351-130.png" alt="n" style="vertical-align: -1px" /> of unknowns in the signal vector, namely, <img class="eq" src="eqs/8321061617244971790-130.png" alt="m&gt;cn" style="vertical-align: -1px" />. Empirically, the upshots of this contribution are: i) (almost) <img class="eq" src="eqs/4461916972778738597-130.png" alt="100%" style="vertical-align: -1px" /> perfect signal recovery in the high-dimensional (say e.g., <img class="eq" src="eqs/3315791583764989158-130.png" alt="nge 2,000" style="vertical-align: -4px" />) regime given only an emph{information-theoretic limit} number of noiseless equations, namely, <img class="eq" src="eqs/524251749945116926-130.png" alt="m=2n-1" style="vertical-align: -1px" /> in the real-valued Gaussian case; and, ii) (nearly) optimal statistical accuracy in the presence of additive noise of bounded support. Finally, substantial numerical tests using both synthetic data and real images corroborate markedly improved signal recovery performance and computational efficiency of our novel procedure relative to state-of-the-art approaches. </p>
+</div></div>
+<div id="footer">
+<div id="footer-text">
+Page generated 2017-05-31 22:35:00 CDT, by <a href="http://jemdoc.jaboc.net/">jemdoc</a>.
+</div>
+</div>
+</td>
+</tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,17 @@
+# jemdoc: menu{MENU}{index.html}
+= Matlab codes
+Gang Wang, Georgios B. Giannakis, Yousef Saad, and Jie Chen
+
+Matlab implementations of RAF can be downloaded here. 
+
+- [codes/raf/RAF1D.m 1D RAF (for vectors)]
+- [codes/raf/Gaussian1D.m 1D example using Gaussian measurements]
+- [codes/raf/RAF2D.m 2D RAF (for matrices)] 
+- [codes/raf/lanczos.m Lanczos algorithm]
+- [codes/raf/imagetest.m 2D image recovery of 2D TAF using coded diffraction patterns of the Milky Way Galaxy image] 
+- [codes/taf/galaxy.jpg Milky Way Galaxy image]
+#- Empirical success rates of TAF, WF and TWF for Gaussian random designs 
+
+If you need more, please write to me at /gangwang@umn.edu/.
+
+
