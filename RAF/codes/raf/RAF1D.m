@@ -1,16 +1,15 @@
-%% Implementation of the Truncated Amplitude Flow algorithm proposed in the paper
-%  `` Solving Systems of Random Quadratic Equations via Truncated Amplitude
-%  Flow'' by G. Wang, G. B. Giannakis, and Y. C. Eldar.
-%  The code below is adapted from implementation of the (Truncated) Wirtinger Flow
-% algorithm implemented by E. Candes, X. Li, M. Soltanolkotabi, and Y. Chen.
+%% Implementation of the Reweighted Amplitude Flow algorithm proposed in the paper
+%  `` Solving Almost Systems of Random Quadratic Equations’’
+%  by G. Wang, G. B. Giannakis, Y. Saad, and J. Chen.
+%  The code below is adapted from implementation of the Wirtinger Flow
+% algorithm implemented by E. Candes, X. Li, and M. Soltanolkotabi.
 
 function [Relerrs, z] = RAF1D(y, x, Params, Amatrix)
 
 %% Initialization
 z0      = randn(Params.n1, Params.n2);
-z0      = z0 / norm(z0, 'fro');    % Initial guess
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-z = z0;
+z      = z0 / norm(z0, 'fro');    % Initial guess
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 normest = sqrt(sum(y(:)) / numel(y(:)));    % Estimate norm to scale eigenvector
 m       = Params.m;
