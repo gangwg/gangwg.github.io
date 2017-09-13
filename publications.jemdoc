@@ -1,8 +1,13 @@
 # jemdoc: menu{MENU}{publications.html}, showsource
 = Publications
 
+== Book Chapters
+. V. Kekatos, G. Wang, H. Zhu, and G. B. Giannakis, ``PSSE redux: Convex relaxation, decentralized, robust, and dynamic approaches,’’ /Advances in Electric Power and Energy; Power Systems Engineering/, M. El-Hawary Editor, 2017. [papers/bookchap (Preprint)]
+
 == Journal Papers
-. *G. Wang*, A. S. Zamzam, G. B. Giannakis, and N. D. Sidiropoulos, ``Power System State Estimation via Feasible Point Pursuit: Algorithms and Cramer-Rao Bound,’’ /IEEE Transactions on Power Systems/, submitted January 2017. [papers/rbfw2016 (Preprint)].
+. *G. Wang*, G. B. Giannakis, Y. Saad, and J. Chen, ``Solving Most High-dimensional Random Systems of Quadratic Equations,’’ 2017 (submitted).
+. *G. Wang*, G. B. Giannakis, and J. Chen, ``Robust and Scalable Power System State Estimation Using Composite Optimization,’’ 2017 (submitted). 
+. *G. Wang*, A. S. Zamzam, G. B. Giannakis, and N. D. Sidiropoulos, ``Power System State Estimation via Feasible Point Pursuit: Algorithms and Cramer-Rao Bound,’’ /IEEE Transactions on Signal Processing/, submitted January 2017. [papers/rbfw2016 (Preprint)].
 . L. Zhang, *G. Wang*, D. Romero, and G. B. Giannakis, ``Randomized Block Frank-Wolfe for Large-Scale Convergent Learning,’’ /IEEE Transactions on Signal Processing/, submitted December 2016. [papers/rbfw2016 (Preprint)]. 
 . *G. Wang*, L. Zhang, G. B. Giannakis, M. Akcakaya, and J. Chen, ``Sparse Phase Retrieval via Truncated Amplitude Flow,’’ /IEEE Transactions on Signal Processing/, submitted November 2016. [papers/sparta2016 (Preprint)]. [/SPARTA (Website and codes)].
 . *G. Wang*, G. B. Giannakis, and J. Chen, ``Scalable Solvers of Large-scale Systems of Random Quadratic Equations via Stochastic Truncated Amplitude Flow,’’ /IEEE Transactions on Signal Processing/, March 2017. [papers/tsp2017wgc (Preprint)]. [/STAF (Website and codes)].
