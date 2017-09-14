@@ -3,12 +3,9 @@
 #[https://jemnz.com/ Jacob Mattingley] ([www@jemnz.com])
 
 ~~~
-{}{img_left}{figures/gangwang1.jpg}{alt text}{240}{260}
-Hi, welcome to my personal webspace!\n 
-I'm a PhD student in the [http://www.ece.umn.edu/ Department of Electrical and Computer Engineering], \n 
-and [http://www.dtc.umn.edu Digital Technology Center] at the [http://twin-cities.umn.edu/ University of Minnesota],\n
- where I am a member of the [http://spincom.umn.edu SPiNCOM] research group directed by Professor [http://spincom.umn.edu/georgios/ Georgios B. Giannakis]. \n
-I earned the B.S. degree in Electrical Engineering and Automation from [http://www.bit.edu.cn Beijing Institute of Technology], Beijing, China in 2011. 
+{}{img_left}{figures/gangwang.jpg}{alt text}{280}{300}
+Hi, welcome to my personal webspace! 
+I'm a PhD student in the [http://www.ece.umn.edu/ Department of Electrical and Computer Engineering], and [http://www.dtc.umn.edu Digital Technology Center] at the [http://twin-cities.umn.edu/ University of Minnesota], where I am a member of the [http://spincom.umn.edu SPiNCOM] research group directed by Professor [http://spincom.umn.edu/georgios/ Georgios B. Giannakis]. I earned my Bachelor degree in Electrical Engineering and Automatic Control from [http://www.bit.edu.cn Beijing Institute of Technology], Beijing, China in 2011. 
 
 == Contact
 Department of Electrical and Computer Engineering\n
@@ -42,25 +39,9 @@ E-mail: [gangwang@umn.edu].
 # jemdoc: menu{MENU}{contactme.html}, showsource
 
 == Recent news
-.Check out our SPARTA (Sparse Phase Retrieval via Truncated Amplitude Flow), \n
-which provably recovers sparse signals from\n
-a small number of magnitude-only measurements. \n
-Sparse orthogonality-promoting initialization is developed, \n
-which outperforms
-existing spectral initializations for phase retrieval of sparse signals.  
-.Check our new paper on stochastic solvers for large-scale phase retrieval\n `Solving Large-scale Random Systems of Quadratic Equations via Stochastic\n Truncated Amplitude Flow.’ Building on truncated amplitude flow (TAF),\n
- we propose stochastic variance-reduced gradient algorithms to solve for an\n
- orthogonality-promoting initialization instead of the gradient-type power method,\n
-and SGD- or Kaczmarz-based iterations to refine the initialization. \n
-#Our algorithm termed Stochastic Truncated Amplitude Flow (STAF) 
-.Our paper `Solving Random Systems of Quadratic Equations via\n
- Truncated Generalized Gradient Flow’ was accepted to *NIPS 2016*,\n
-which is to be held in Barcelona, Spain. \n
-The proposed algorithm benchmarks the performance of solving
- generalized phase retrieval\n
- under Gaussian random measurements or coded diffraction patterns.\n
- A full version with Matlab implementations is available at 
- [http://www.tc.umn.edu/~gangwang/TAF/ here].
+. Check our new paper on stochastic-type algorithms for large-scale phase retrieval problems `Solving Large-scale Random Systems of Quadratic Equations via Stochastic Truncated Amplitude Flow.’ Building on truncated amplitude flow (TAF), we propose stochastic variance-reduced gradient (SVRG) algorithms to solve for the orthogonality-promoting initialization instead of the gradient-type power method, and  stochastic gradient descent (SGD)-based or Kaczmarz-based iterations to refine the initialization. #Our algorithm termed Stochastic Truncated Amplitude Flow (STAF) 
+. Our paper `Solving Random Systems of Quadratic Equations via Truncated Generalized Gradient Flow’ was accepted to *NIPS 2016*, which is to be held in Barcelona, Spain. The proposed algorithm benchmarks the performance of solving generalized phase retrieval under Gaussian random measurements or coded diffraction patterns. 
+A full version along with Matlab implementations is available at [http://www.tc.umn.edu/~gangwang/TAF/ here].
 
 
 
