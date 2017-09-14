@@ -17,7 +17,7 @@ MathJax.Hub.Config({
 <!-- End MathJax -->
 </head>
 <body>
-<table summary="Table for page layout." id="tlayout">
+<table align="center" summary="Table for page layout." id="tlayout">
 <tr valign="top">
 <td id="layout-menu">
 <div class="menu-category">Gang Wang</div>
@@ -45,23 +45,23 @@ E-mail: gangwang<b>AT</b>umn.edu.
 </td></tr></table>
 <h2>Recent news</h2>
 <ol>
-<li><p>We won a Best Student Paper Award in EUSIPCOâ€™2017 for the joint work with Profs. G. B. Giannakis and J. Chen (BIT).</p>
+<li><p>We won a Best Student Paper Award in EUSIPCOœôòù2017 for the joint work with Profs. G. B. Giannakis and J. Chen (BIT).</p>
 </li>
-<li><p>Our paper coauthored with Profs. G. B. Giannakis, Y. Saad (CS, UMN), and J. Chen (BIT) accepted to NIPSâ€™2017, which presents a new algorithm for solving systems of random quadratic equations achieving state-of-the-art numerical performance.</p>
+<li><p>Our paper coauthored with Profs. G. B. Giannakis, Y. Saad (CS, UMN), and J. Chen (BIT) accepted to NIPSœôòù2017, which presents a new algorithm for solving systems of random quadratic equations achieving state-of-the-art numerical performance.</p>
 </li>
 <li><p>Submitted a paper on scalable composite optimization algorithms for robust power system state estimation. Check it out in PUBLICATIONS!</p>
 </li>
-<li><p>Submitted an invited book chapter on &lsquo;Advances in Power System State Estimation,â€™ coauthored with Profs. V. Kakatos (VT), H. Zhu (UT Austin), and G. B. Giannakis. The book chapter offers a contemporary view of state estimation in smart grids.</p>
+<li><p>Submitted an invited book chapter on &lsquo;Advances in Power System State Estimation,œôòù coauthored with Profs. V. Kakatos (VT), H. Zhu (UT Austin), and G. B. Giannakis. The book chapter offers a contemporary view of state estimation in smart grids.</p>
 </li>
-<li><p>Check our new paper on stochastic-type algorithms for large-scale phase retrieval problems &lsquo;Solving Large-scale Random Systems of Quadratic Equations via Stochastic Truncated Amplitude Flow.â€™ Building on truncated amplitude flow, we propose stochastic variance-reduced gradient (SVRG) algorithms to solve for the orthogonality-promoting initialization instead of the gradient-type power method, and  stochastic gradient descent -based or Kaczmarz-based iterations to refine the initialization.</p>
+<li><p>Check our new paper on stochastic-type algorithms for large-scale phase retrieval problems &lsquo;Solving Large-scale Random Systems of Quadratic Equations via Stochastic Truncated Amplitude Flow.œôòù Building on truncated amplitude flow, we propose stochastic variance-reduced gradient (SVRG) algorithms to solve for the orthogonality-promoting initialization instead of the gradient-type power method, and  stochastic gradient descent -based or Kaczmarz-based iterations to refine the initialization.</p>
 </li>
-<li><p>Our paper &lsquo;Solving Random Systems of Quadratic Equations via Truncated Generalized Gradient Flowâ€™ was accepted to NIPSâ€™2016, which is to be held in Barcelona, Spain. The proposed algorithm benchmarks the performance of solving generalized phase retrieval under Gaussian random measurements or coded diffraction patterns. 
+<li><p>Our paper &lsquo;Solving Random Systems of Quadratic Equations via Truncated Generalized Gradient Flowœôòù was accepted to NIPSœôòù2016, which is to be held in Barcelona, Spain. The proposed algorithm benchmarks the performance of solving generalized phase retrieval under Gaussian random measurements or coded diffraction patterns. 
 A full version along with Matlab implementations is available at <a href="http://www.tc.umn.edu/~gangwang/TAF/">here</a>.</p>
 </li>
 </ol>
 <div id="footer">
 <div id="footer-text">
-Page generated 2017-09-14 17:23:02 CDT, by <a href="http://jemdoc.jaboc.net/">jemdoc</a>.
+Page generated 2017-09-14 16:51:07 CDT, by <a href="http://jemdoc.jaboc.net/">jemdoc</a>.
 </div>
 </div>
 </td>
