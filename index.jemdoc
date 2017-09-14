@@ -13,7 +13,7 @@ Department of Electrical and Computer Engineering\n
 University of Minnesota, Minneapolis\n
 117 Pleasant St. SE, Minneapolis, MN, 55455\n
 Office: 460 Walter Library\n
-E-mail: [gangwang@umn.edu].
+E-mail: gangwang*AT*umn.edu.
 #,
 ~~~
 
@@ -25,7 +25,7 @@ E-mail: [gangwang@umn.edu].
 #[https://github.com/jem/jemdoc Contribute to jemdoc on github.]
 
 #== Research Interests
-#- Stochastic/online convex optimization
+#- Stochastic and online optimization
 #- Power systems energy management
 #- Machine learning
 #- Control theory
@@ -40,9 +40,12 @@ E-mail: [gangwang@umn.edu].
 # jemdoc: menu{MENU}{contactme.html}, showsource
 
 == Recent news
-. Won a Best Student Paper Award in Eusipco’2017 Conference! 
-. Check our new paper on stochastic-type algorithms for large-scale phase retrieval problems `Solving Large-scale Random Systems of Quadratic Equations via Stochastic Truncated Amplitude Flow.’ Building on truncated amplitude flow (TAF), we propose stochastic variance-reduced gradient (SVRG) algorithms to solve for the orthogonality-promoting initialization instead of the gradient-type power method, and  stochastic gradient descent (SGD)-based or Kaczmarz-based iterations to refine the initialization. #Our algorithm termed Stochastic Truncated Amplitude Flow (STAF) 
-. Our paper `Solving Random Systems of Quadratic Equations via Truncated Generalized Gradient Flow’ was accepted to *NIPS 2016*, which is to be held in Barcelona, Spain. The proposed algorithm benchmarks the performance of solving generalized phase retrieval under Gaussian random measurements or coded diffraction patterns. 
+. We won a Best Student Paper Award in EUSIPCO’2017 Conference! Joint work with Profs. G. B. Giannakis and J. Chen (BIT).
+. Our paper coauthored with Profs. G. B. Giannakis, Y. Saad (CS, UMN), and J. Chen (BIT) accepted to NIPS’2017, which presents a new algorithm for solving systems of random quadratic equations achieving state-of-the-art numerical performance.
+. Submitted a paper on scalable composite optimization algorithms for robust power system state estimation. Check it out in PUBLICATIONS!
+. Submitted an invited book chapter on `Advances in Power System State Estimation,’ coauthored with Profs. V. Kakatos (VT), H. Zhu (UT Austin), and G. B. Giannakis. The book chapter offers a contemporary view of state estimation in smart grids.
+. Check our new paper on stochastic-type algorithms for large-scale phase retrieval problems `Solving Large-scale Random Systems of Quadratic Equations via Stochastic Truncated Amplitude Flow.’ Building on truncated amplitude flow, we propose stochastic variance-reduced gradient (SVRG) algorithms to solve for the orthogonality-promoting initialization instead of the gradient-type power method, and  stochastic gradient descent -based or Kaczmarz-based iterations to refine the initialization. #Our algorithm termed Stochastic Truncated Amplitude Flow. 
+. Our paper `Solving Random Systems of Quadratic Equations via Truncated Generalized Gradient Flow’ was accepted to NIPS’2016, which is to be held in Barcelona, Spain. The proposed algorithm benchmarks the performance of solving generalized phase retrieval under Gaussian random measurements or coded diffraction patterns. 
 A full version along with Matlab implementations is available at [http://www.tc.umn.edu/~gangwang/TAF/ here].
 
 
