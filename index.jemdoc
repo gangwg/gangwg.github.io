@@ -40,12 +40,15 @@ E-mail: gangwang*AT*umn.edu.
 # jemdoc: menu{MENU}{contactme.html}, showsource
 
 == Recent news
-. We won a Best Student Paper Award in EUSIPCO’2017 for the joint work with Profs. G. B. Giannakis and J. Chen (BIT).
-. Our paper coauthored with Profs. G. B. Giannakis, Y. Saad (CS, UMN), and J. Chen (BIT) accepted to NIPS’2017, which presents a new algorithm for solving systems of random quadratic equations achieving state-of-the-art numerical performance.
-. Submitted a paper on scalable composite optimization algorithms for robust power system state estimation. Check it out in PUBLICATIONS!
-. Submitted an invited book chapter on `Advances in Power System State Estimation,’ coauthored with Profs. V. Kakatos (VT), H. Zhu (UT Austin), and G. B. Giannakis. The book chapter offers a contemporary view of state estimation in smart grids.
-. Check our new paper on stochastic-type algorithms for large-scale phase retrieval problems `Solving Large-scale Random Systems of Quadratic Equations via Stochastic Truncated Amplitude Flow.’ Building on truncated amplitude flow, we propose stochastic variance-reduced gradient (SVRG) algorithms to solve for the orthogonality-promoting initialization instead of the gradient-type power method, and  stochastic gradient descent -based or Kaczmarz-based iterations to refine the initialization. #Our algorithm termed Stochastic Truncated Amplitude Flow. 
-. Our paper `Solving Random Systems of Quadratic Equations via Truncated Generalized Gradient Flow’ was accepted to NIPS’2016, which is to be held in Barcelona, Spain. The proposed algorithm benchmarks the performance of solving generalized phase retrieval under Gaussian random measurements or coded diffraction patterns. 
+. We won a Best Student Paper Award in EUSIPCO’2017 for the joint work with Profs. G. B. Giannakis and J. Chen on efficient algorithms for large-scale phase retrieval, which was selected from hundreds of submissions based on rigorous evaluations of the selection committee. 
+. Paper coauthored with Profs. G. B. Giannakis, Y. Saad (CS, UMN), and J. Chen (BIT) accepted to NIPS’2017, which presents a new algorithm for solving systems of random quadratic equations achieving state-of-the-art numerical performance. Matlab codes available for download in Publications.
+. Paper on randomized block Franke-Wolfe algorithms, joint work with L. Zhang, D. Romero (Univ. of Agder, Norway), accepted to the IEEE Transactions on Signal Processing. Congratulations Liang! 
+. Paper ``Solving Random Systems of Quadratic Equations via Truncated Amplitude Flow’’, joint work with Prof. Y. Elder (Technion), accepted to the IEEE Transactions on Information Theory. Matlab codes available in Publications. 
+. Paper on scalable composite optimization algorithms for robust power system state estimation submitted. Check it out in Publications.
+. Invited book chapter on ``Advances in Power System State Estimation,’’ coauthored with Profs. V. Kakatos (VT), H. Zhu (UT Austin), and G. B. Giannakis submitted. The book chapter offers a contemporary view of state estimation for modern autonomous energy grids.
+. Paper on stochastic algorithms for large-scale phase retrieval problems ``Solving Large-scale Random Systems of Quadratic Equations via Stochastic Truncated Amplitude Flow’’ accepted to the IEEE Transactions on Signal Processing.
+# Building on truncated amplitude flow, we propose stochastic variance-reduced gradient (SVRG) algorithms to solve for the orthogonality-promoting initialization instead of the gradient-type power method, and  stochastic gradient descent -based or Kaczmarz-based iterations to refine the initialization. #Our algorithm termed Stochastic Truncated Amplitude Flow. 
+. Paper ``Solving Random Systems of Quadratic Equations via Truncated Generalized Gradient Flow’’ accepted to NIPS’2016, which is to be held in Barcelona, Spain. The proposed algorithm benchmarks the performance of solving generalized phase retrieval under Gaussian random measurements or coded diffraction patterns. 
 A full version along with Matlab implementations is available at [http://www.tc.umn.edu/~gangwang/TAF/ here].
 
 
