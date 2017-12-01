@@ -31,8 +31,8 @@ E-mail: gangwang*AT*umn.edu.
 #[https://github.com/jem/jemdoc Contribute to jemdoc on github.]
 
 #== Research Interests
-#- Stochastic and online optimization
-#- Power systems energy management
+#- Stochastic and nonconvex optimization
+#- Smart grid energy management
 #- Machine learning
 #- Control theory
 
@@ -48,7 +48,7 @@ E-mail: gangwang*AT*umn.edu.
 == Recent news
 
 
-. 10/2017: Paper on sparse phase retrieval via truncated amplitude flow accepted to the *IEEE Transactions on Signal Processing*. Matlab codes available for download [http://gangumn.github.io/SPARTA/ here].
+. 10/2017: Paper on ``Sparse Phase Retrieval via Truncated Amplitude Flow” accepted to the *IEEE Transactions on Signal Processing*. Matlab codes available for download [http://gangumn.github.io/SPARTA/ here].
 . 10/2017: Paper on ``Discriminative Principal Component Analysis” for joint analysis of multiple large-scale datasets submitted. Available [https://arxiv.org/pdf/1710.09429.pdf here]. Check it out!
 . 9/2017: We won a *Best Student Paper Award* in the EUSIPCO’2017 Conference for the joint work with Profs. G. B. Giannakis and J. Chen on efficient algorithms for large-scale phase retrieval, which was selected from a few hundred submissions based on rigorous evaluations of the selection committee.
 . 8/2017: Paper coauthored with Profs. G. B. Giannakis, Y. Saad (CS, UMN), and J. Chen (BIT) accepted to *NIPS’2017* (Acceptance rate: 21%), which presents a new algorithm for solving systems of random quadratic equations benchmarking the numerical performance. Matlab codes available for download [http://gangumn.github.io/RAF/ here].
