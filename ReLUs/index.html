@@ -1,0 +1,63 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<link rel="stylesheet" href="jemdoc.css" type="text/css" />
+<title>Learning ReLU Networks on Linearly Separable Data: Algorithm, Optimality, and Generalization</title>
+</head>
+<body>
+<table summary="Table for page layout." id="tlayout">
+<tr valign="top">
+<td id="layout-menu">
+<div class="menu-item"><a href="index.html" class="current">Paper</a></div>
+<div class="menu-item"><a href="codes.html">Matlab&nbsp;codes</a></div>
+</td>
+<td id="layout-content">
+<div id="toptitle">
+<h1>Learning ReLU Networks on Linearly Separable Data: Algorithm, Optimality, and Generalization</h1>
+</div>
+<table class="imgtable"><tr><td>
+<img src="escape.pdf" alt="alt text" width="440px" height="340px" />&nbsp;</td>
+<td align="left"><p>Provably escape local minima by means of noise-injected SGD in training single-hidden-layer ReLU networks!</p>
+</td></tr></table>
+<h3>Learning ReLU Networks on Linearly Separable Data: Algorithm, Optimality, and Generalization.</h3>
+<p>Authors: G. Wang, G. B. Giannakis, and J. Chen</p>
+<p>Neural networks with REctified Linear Unit (ReLU)
+activations have achieved great empirical success in various
+domains. However, existing results for learning ReLU networks
+either pose assumptions on the underlying data distribution
+being e.g. Gaussian, or require the network size and<i>or training
+size to be sufficiently large. In this context, the problem of
+learning a two-layer ReLU network is approached in a binary
+classification setting, where the data are linearly separable and a
+hinge loss criterion is adopted. Leveraging the power of random
+noise, this paper presents a novel stochastic gradient descent
+(SGD) algorithm, which can provably train any single-hidden-layer
+ReLU network to attain global optimality, despite the
+presence of infinitely many bad local minima, maxima, and saddle
+points in general. This result is the first of its kind, requiring
+no assumptions on the data distribution, training</i>network size,
+or initialization. Convergence of the resultant iterative algorithm
+to a global minimum is analyzed by establishing both an upper
+bound and a lower bound on the number of non-zero updates to
+be performed. Moreover, generalization guarantees are developed
+for ReLU networks trained with the novel SGD. These guarantees
+highlight a key difference (at least in the worst case) between
+reliably learning a ReLU network as well as a leaky ReLU
+network in terms of sample complexity. Numerical tests using
+both synthetic data and real images validate the effectiveness of
+the algorithm and the practical merits of the theory.</p>
+<div class="infoblock">
+<div class="blockcontent">
+<div id="footer">
+<div id="footer-text">
+Page generated 2018-12-17 15:19:09 CST, by <a href="http://jemdoc.jaboc.net/">jemdoc</a>.
+</div>
+</div>
+</td>
+</tr>
+</table>
+</body>
+</html>
