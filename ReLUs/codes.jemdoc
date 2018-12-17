@@ -2,11 +2,11 @@
 Gang Wang, Georgios B. Giannakis, and Jie Chen
 
 Implementation of the noisy-injected stochastic gradient descent proposed in the paper
-  `` Learning ReLU Networks on Linearly Separable Data: Algorithm, Optimality, and Generalization'' by G. Wang, G. B. Giannakis, and J. Chen.
+  ``Learning ReLU Networks on Linearly Separable Data: Algorithm, Optimality, and Generalization'' by G. Wang, G. B. Giannakis, and J. Chen.
 
 - [codes/relus/learningrelus.m Learning ReLus (for single-hidden-layer neural networks)]
-- [codes/raf/nReLU_work.m Noise-injected SGD]
-- [codes/raf/lReLU.m (Leaky) or plain-vanilla SGD] 
+- [codes/relus/nReLU_work.m Noise-injected SGD]
+- [codes/relus/lReLU.m Plain-vanilla SGD] 
 
 
 If you need more, please write to me at /gangwang at umn.edu/.
