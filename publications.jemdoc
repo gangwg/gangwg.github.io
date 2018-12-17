@@ -3,26 +3,41 @@
 
 == Book Chapter
 
-. V. Kekatos, G. Wang, H. Zhu, and G. B. Giannakis, "PSSE redux: Convex relaxation, decentralized, robust, and dynamic approaches," /Advances in Electric Power and Energy; Power Systems Engineering/, M. El-Hawary Editor, 2017. [papers/bookchap.pdf (Preprint)]
+. V. Kekatos, G. Wang, H. Zhu, and G. B. Giannakis, "PSSE redux: Convex relaxation, decentralized, robust, and dynamic approaches," /Advances in Electric Power and Energy; Power Systems Engineering/, M. El-Hawary Editor, 2019. [papers/bookchap.pdf (Preprint)]
 
 == Journal Papers
 
-. *G. Wang*, G. B. Giannakis, Y. Saad, and J. Chen, "Solving Most High-dimensional Random Systems of Quadratic Equations," 2017. [papers/tsp2017wgsc.pdf (Preprint)]. [/RAF (Website and codes)].
-. *G. Wang*, G. B. Giannakis, and J. Chen, "Robust and Scalable Power System State Estimation Using Composite Optimization," /IEEE Transactions on Signal Processing/, revised November 2017. [papers/tsg2017wgc.pdf (Preprint)]
-. *G. Wang*, A. S. Zamzam, G. B. Giannakis, and N. D. Sidiropoulos, "Power System State Estimation via Feasible Point Pursuit: Algorithms and
-Cramer-Rao Bound," /IEEE Transactions on Signal Processing/, submitted January 2017. [papers/rbfw2016.pdf (Preprint)]
-. L. Zhang, *G. Wang*, D. Romero, and G. B. Giannakis, "Randomized Block Frank-Wolfe for Large-Scale Convergent Learning," /IEEE Transactions on Signal Processing/, vol. 65, no. 24, pp. 6448-6461, December 2017. [papers/rbfw2016 (Preprint)]. 
-. *G. Wang*, L. Zhang, G. B. Giannakis, M. Akcakaya, and J. Chen, "Sparse Phase Retrieval via Truncated Amplitude Flow," /IEEE Transactions on Signal Processing/, to appear November 2017. [papers/sparta2016.pdf (Preprint)]. [/SPARTA (Website and codes)].
-. *G. Wang*, G. B. Giannakis, and J. Chen, "Scalable Solvers of Large-scale Systems of Random Quadratic Equations via Stochastic Truncated Amplitude Flow," /IEEE Transactions on Signal Processing/, vol. 65, no. 8, pp. 1961-1974, April 2017. [papers/tsp2017wgc (Preprint)]. [/STAF (Website and codes)].
-. *G. Wang*, G. B. Giannakis, and Y. C. Eldar, "Solving Systems of Random Quadratic Equations via Truncated Amplitude Flow," /IEEE Transactions on Information Theory/, July 2016 (To appear). [papers/taf2016.pdf (Preprint)]. [/TAF (Website and codes)].. *G. Wang*, V. Kekatos, A.-J. Conejo, and G. B. Giannakis, "Ergodic Energy Management Leveraging Resource Variability in Distribution Grids," /IEEE Transactions on Power Systems/, to appear June 2016. [papers/tps2016wkcg.pdf (pdf)]
-. V. Kekatos, *G. Wang*, A.-J. Conejo, and G. B. Giannakis, "Stochastic Reactive Power Management in Microgrids with Renewables," /IEEE Transactions on Power Systems/, vol. 30, January 2015. [papers/tps2015kwcg.pdf (pdf)]
-. *G. Wang*, J. Chen, and J. Sun, "Stochastic Stability of Extended Filtering for Nonlinear Systems with Measurement Packet Losses," /IET Control Theory & Applications/, vol. 7, no. 17, pp. 2048-2055, November 2013. [papers/iet2013wcs.pdf (pdf)]. J. Chen, *G. Wang*, and J. Sun, "Power Scheduling for Kalman Filtering over Lossy Wireless Sensor Networks," /IET Control Theory & Applications/, November 2016.
+. A. Sadeghi, *G. Wang*, and G. B. Giannakis, ``Dynamic Caching Scheme via Deep Reinforcement Learning,” /IEEE Transactions on Signal Processing/, Submitted January 2019.
+. G. Wu, *G. Wang*, J. Sun, and J. Chen, ``Optimal Partial Feedback Attacks in Cyber-Physical Power Systems,'' /IEEE Transactions on Cybernetics/, Submitted January 2019.
+. L. Zhang, *G. Wang*, and G. B. Giannakis, ``Real-time Power System State Estimation and Forecasting via Deep Neural Networks,” /IEEE Transactions on Power Systems/, submitted November 2018. [https://github.com/LiangZhangUMN/PSSE-via-DNNs Python code available here]
+. *G. Wang*, G. B. Giannakis, and J. Chen, ``Robust and Scalable Power System State Estimation Using Composite Optimization,’’ /IEEE Transactions on Smart Grid/, re-re-revised October 2018.
+. *G. Wang*, G. B. Giannakis, and J. Chen, ``Training Single-Hidden-Layer ReLU Networks to Global Optimality on Linearly Separable Data," /IEEE Transactions on Signal Processing/, submitted August 2018; revised December 2018. [/codes/relus (Website and codes)].
+. G. Wu, *G. Wang*, and J. Sun, ``Optimal Switching Data Injection Attacks and Countermeasures in Cyber-Physical Systems,” /IEEE Transactions Cybernetics/, submitted November 2018.
+. J. Chen, *G. Wang*, and G. B. Giannakis, ``Graph Multiview Canonical Correlation Analysis," /IEEE Transactions on Signal Processing/, Submitted November 2018.
+. *G. Wang*, H. Zhu, G. B. Giannakis, and J. Sun, ``Robust Power System State Estimation from Rank-One Measurements," /IEEE Transactions on Control of Network Systems/, to appear June 2019.
+. *G. Wang*, J. Chen, G. B. Giannakis, and J. Sun, ``Distribution System State Estimation: An Overview of Recent Developments,” /Springer Frontiers of Information Technology & Electronic Engineering/, vol. 20, no. 1, pp. 1-14, January 2019. 
+. J. Chen, *G. Wang*, and G. B. Giannakis, ``Nonlinear Dimensionality Reduction for Discriminative Analytics of Multiple Datasets," /IEEE Transactions on Signal Processing/, to appear January 2019.
+. L. Zhang, *G. Wang*, G. B. Giannakis, and J. Chen, ``Compressive Phase Retrieval via Reweighted Amplitude Flow," /IEEE Transactions on Signal Processing/, vol. 66, no. 19, pp. 5029-5040, October 2018.
+. J. Chen, *G. Wang*, Y. Shen, and G. B. Giannakis, ``Canonical Correlation Analysis of Datasets with a Common Source Graph," /IEEE Transactions on Signal Processing/, vol. 66, no. 16, pp. 4398-4408, August 2018.
+. *G. Wang*, G. B. Giannakis, Y. Saad, and J. Chen, ``Phase Retrieval via Reweighted Amplitude Flow," /IEEE Transactions on Signal Processing/, vol. 66, no. 11, pp. 2818-2833, June 2018.
+. *G. Wang*, A. S. Zamzam, G. B. Giannakis, and N. D. Sidiropoulos, ``Power System State Estimation via Feasible Point Pursuit: Algorithms and Cramer-Rao Bound," /IEEE Transactions on Signal Processing/, vol. 66, no. 6, pp. 1649-1658, March 2018.
+. L. Zhang, *G. Wang*, D. Romero, and G. B. Giannakis, ``Randomized Block Frank-Wolfe for Convergent Large-Scale Learning," /IEEE Transactions on Signal Processing/, vol. 65, no. 24, pp. 6448-6461, December 2017. [papers/rbfw2016 (Preprint)]. 
+. *G. Wang*, L. Zhang, G. B. Giannakis, M. Akcakaya, and J. Chen, ``Sparse Phase Retrieval via Truncated Amplitude Flow," /IEEE Transactions on Signal Processing/, vol. 66, no. 2, pp. 479-491, January 2018. [papers/sparta2016 (Preprint)]. [/SPARTA (Website and codes)].
+. *G. Wang&, G. B. Giannakis, and J. Chen, ``Scalable Solvers of Random Quadratic Equations via Stochastic Truncated Amplitude Flow," /IEEE Transactions on Signal Processing/, vol. 65, no. 8, pp. 1961-1974, April 2017. [papers/tsp2017wgc (Preprint)]. [/STAF (Website and codes)].
+. *G. Wang*, G. B. Giannakis, and Y. Eldar, ``Solving Random Systems of Quadratic Equations via Truncated Amplitude Flow," /IEEE Transactions on Information Theory/, vol. 64, no. 2, pp. 773-794, February 2018. [papers/taf2016 (Preprint)]. [/TAF (Website and codes)].. *G. Wang*, V. Kekatos, A.-J. Conejo, and G. B. Giannakis, ``Ergodic Energy Management Leveraging Resource Variability in Distribution Grids,’’ /IEEE Transactions on Power Systems/, to appear June 2016. [papers/tps2016wkcg.pdf (pdf)]
+. V. Kekatos, *G. Wang*, A.-J. Conejo, and G. B. Giannakis, ``Stochastic Reactive Power Management in Microgrids with Renewables,’’ /IEEE Transactions on Power Systems/, vol. 30, January 2015. [papers/tps2015kwcg.pdf (pdf)]
+. *G. Wang*, J. Chen, and J. Sun, ``Stochastic Stability of Extended Filtering for Nonlinear Systems with Measurement Packet Losses,’’ /IET Control Theory & Applications/, vol. 7, no. 17, pp. 2048-2055, November 2013. [papers/iet2013wcs.pdf (pdf)]. J. Chen, *G. Wang*, and J. Sun, ``Power Scheduling for Kalman Filtering over Lossy Wireless Sensor Networks,’’ /IET Control Theory & Applications/, November 2016.
+
 
 
 == Conference/Workshop Papers
 
+. J. Chen, *G. Wang*, and G. B. Giannakis, ``Multiview Canonical Correlation Analysis over Graphs,'' /Proc. of Intl. Conf. on Acoustics, Speech, and Signal Processing/, Brighton, UK, May 12-17, 2019.
+. L. Zhang, *G. Wang*, and G. B. Giannakis, ``Power System State Forecasting via Deep Recurrent Neural Networks,'' /Proc. of Intl. Conf. on Acoustics, Speech, and Signal Processing/, Brighton, UK, May 12-17, 2019.
+. J. Chen, *G. Wang*, and G. B. Giannakis, ``Nonlinear Discriminative Dimensionality Reduction of Multiple Datasets,'' /Proc. of Asilomar Conf. on Signals, Systems, and Computers/, Pacific Grove, CA, November 2-5, 2018.
+. L. Zhang, *G. Wang*, and G. B. Giannakis, ``Real-time Power System State Estimation via Deep Unrolled Neural Networks,'' /Proc. GloablSIP/, Pacific Grove, CA, November 2-5, 2018. 
 . * G. Wang*, G. B. Giannakis, Y. Saad, and J. Chen “Solving Almost All Systems of Random Quadratic Equations," /The Thirty-First Annual Conf. on Neural Information Processing Systems/, Long Beach, CA, USA, December 4-9, 2017. 
-. L. Zhang, *G. Wang*, and G. B. Giannakis, “Radial Power Network Topology Identification Using Voltage Correlations," /Proc. of CAMSAP/, Curacao, Dutch Antilles, December 10-13, 2017.
+. L. Zhang, *G. Wang*, and G. B. Giannakis, “Going beyond linear dependencies to unveil connectivity of meshed grids," /Proc. of CAMSAP/, Curacao, Dutch Antilles, December 10-13, 2017.
 . *G. Wang*, G. B. Giannakis, and J. Chen “Solving Large-scale Systems of Random Quadratic Equations via Stochastic Truncated Amplitude Flow," /Proc. of EUSIPCO/, Kos Island, Greece, August 28-Sept. 3, 2017. (*Best Student Paper Award*). 
 . *G. Wang*, G. B. Giannakis, J. Chen, and M. Akcakaya, "SPARTA: Sparse Phase Retrieval via Truncated Amplitude Flow," /Proc. of Intl. Conf. on Acoust., Speech, and Signal Processing/, New Orleans, USA, March 5-9, 2017.
 . *G. Wang* and G. B. Giannakis, “Solving Random Systems of Quadratic Equations via Truncated Generalized Gradient Flow," /The Thirtieth Annual Conf. on Neural Information Processing Systems/, Barcelona, Spain, December 5-10, 2016. . *G. Wang*, A. S. Zamzam, G. B. Giannakis, and N. D. Sidiropoulos, “Power System State Estimation via Feasible Point Pursuit," /Proc. of Globalsip Conf./, Washington, DC, Dec. 7-9, 2016.
