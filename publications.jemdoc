@@ -11,7 +11,7 @@
 . G. Wu, *G. Wang*, J. Sun, and J. Chen, ``Optimal Partial Feedback Attacks in Cyber-Physical Power Systems,'' /IEEE Transactions on Cybernetics/, Submitted January 2019.
 . L. Zhang, *G. Wang*, and G. B. Giannakis, ``Real-time Power System State Estimation and Forecasting via Deep Neural Networks,” /IEEE Transactions on Power Systems/, submitted November 2018. [https://github.com/LiangZhangUMN/PSSE-via-DNNs Python code available here]
 . *G. Wang*, G. B. Giannakis, and J. Chen, ``Robust and Scalable Power System State Estimation Using Composite Optimization,’’ /IEEE Transactions on Smart Grid/, re-re-revised October 2018.
-. *G. Wang*, G. B. Giannakis, and J. Chen, ``Training Single-Hidden-Layer ReLU Networks to Global Optimality on Linearly Separable Data," /IEEE Transactions on Signal Processing/, submitted August 2018; revised December 2018. [/codes/relus (Website and codes)].
+. *G. Wang*, G. B. Giannakis, and J. Chen, ``Training Single-Hidden-Layer ReLU Networks to Global Optimality on Linearly Separable Data," /IEEE Transactions on Signal Processing/, submitted August 2018; revised December 2018. [/codes/relus (codes)].
 . G. Wu, *G. Wang*, and J. Sun, ``Optimal Switching Data Injection Attacks and Countermeasures in Cyber-Physical Systems,” /IEEE Transactions Cybernetics/, submitted November 2018.
 . J. Chen, *G. Wang*, and G. B. Giannakis, ``Graph Multiview Canonical Correlation Analysis," /IEEE Transactions on Signal Processing/, Submitted November 2018.
 . *G. Wang*, H. Zhu, G. B. Giannakis, and J. Sun, ``Robust Power System State Estimation from Rank-One Measurements," /IEEE Transactions on Control of Network Systems/, to appear June 2019.
