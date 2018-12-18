@@ -17,8 +17,8 @@ body {
 	background: #f6f6f6;
 	border: 1px solid #dddddd;
 	padding-top: 0.5em;
-	padding-left: 12px;
-	padding-right: 12px;
+	padding-left: 10px;
+	padding-right: 10px;
 	font-size: 1.2em;
 	width: auto;
 	white-space: nowrap;
@@ -33,8 +33,8 @@ body {
 
 #layout-content {
 	padding-top: 1.0em;
-	padding-left: 10%;
-	padding-right: 10%;;
+	padding-left: 4%;
+	padding-right: 30%;;
     border: none;
     background: white;
     text-align: left;
@@ -131,8 +131,8 @@ h1 {
 }
 
 h2 {
-	padding-top: 0.8em;
-	font-size: 125%;
+	padding-top: 1em;
+	font-size: 150%;
 }
 
 h2 + h3 {
@@ -140,7 +140,7 @@ h2 + h3 {
 }
 
 h3 {
-	font-size: 110%;
+	font-size: 120%;
 	border-bottom: none;
 }
 
@@ -305,7 +305,7 @@ span.comment, span.comment > *, span.string, span.string > * {
 }
 
 #fwtitle #toptitle {
-	padding-left: 0.5em;
+	padding-left: 0.2em;
 	margin-bottom: 0.5em;
 }
 
@@ -329,7 +329,7 @@ img.eq {
 }
 
 img.eqwl {
-	padding-left: 2em;
+	padding-left: 1em;
 	padding-top: 0.6em;
 	padding-bottom: 0.2em;
 	margin: 0;
