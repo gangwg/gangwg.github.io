@@ -9,7 +9,7 @@
 . G. Wu, *G. Wang*, J. Sun, and J. Chen, ``Optimal Partial Feedback Attacks in Cyber-Physical Power Systems,'' /IEEE Transactions on Automatic Control/, submitted February 2019.
 . L. Zhang, *G. Wang*, and G. B. Giannakis, ``Real-time Power System State Estimation and Forecasting via Deep Neural Networks,” /IEEE Transactions on Signal Processing/, submitted February 2019. [https://github.com/LiangZhangUMN/PSSE-via-DNNs Python code available here]
 #. M. Liu, *G. Wang*, G. B. Giuannakis, M. Xiong, Q. Liu, and P. Xia, ``Wireless Power Transfer Deployment in IoT,'' /IEEE Internet of Things Journal/, submitted January, 2019.
-#. W. Fang, *G. Wang*, G. B. Giannakis, Q. Liu, and P. Xia, ``Channel-Dependent Scheduling in Wireless Power Transferfor IoT Devices,'' /IEEE Internet of Things Journal/, submitted January, 2019.
+. W. Fang, *G. Wang*, G. B. Giannakis, Q. Liu, and P. Xia, ``Channel-Dependent Scheduling in Wireless Power Transferfor IoT Devices,'' /IEEE Internet of Things Journal/, submitted January, 2019.
 . J. Chen, *G. Wang*, and G. B. Giannakis, ``Graph Multiview Canonical Correlation Analysis," /IEEE Transactions on Signal Processing/, submitted November 2018.
 . G. Wu, *G. Wang*, and J. Sun, ``Optimal Switching Data Injection Attacks and Countermeasures in Cyber-Physical Systems,” /IEEE Transactions Cybernetics/, submitted November 2018.
 . *G. Wang*, G. B. Giannakis, and J. Chen, ``Training Single-Hidden-Layer ReLU Networks to Global Optimality on Linearly Separable Data," /IEEE Transactions on Signal Processing/, submitted August 2018; revised December 2018. [/codes/relus (Website and codes)].
@@ -33,7 +33,7 @@
 . Q. Yang, *G. Wang*, A. Sadeghi, and G. B. Giannakis, ``Two-Timescale Voltage Regulation in Distribution Grids Using Deep Reinforcement Learning,'' /Proc. of Intl. Conf. on Communications, Control, and Computing Technol. for Smart Grids/, Beijing, P. R. China, October 21-24, 2019 (submitted).
 #. *G. Wang*, G. B. Giannakis, and J. Chen, ``Learning ReLU Networks on Linearly Separable Data: Algorithm, Optimality, and Generalization,'' /Proc. of Intl. Conf. on Machine Learning/, Long Beach, CA, June 16-18, 2019 (submitted).
 . *G. Wang*, G. B. Giannakis, and J. Chen, ``Fast Least-Absolute-Value Solver via Composite Optimization,'' /Proc. of IEEE PES General Mtg./, Atlanta, GA, August 4-8, 2019 (submitted).
-L. Zhang, Z. Wang, *G. Wang*, and G. B. Giannakis, ``Distribution System State Estimation Using Data- and Physics-Driven Deep Neural Networks,'' /Proc. of IEEE Data Science Workshop/, Minneapolis, MN, June 2-5, 2019.
+. L. Zhang, Z. Wang, *G. Wang*, and G. B. Giannakis, ``Distribution System State Estimation Using Data- and Physics-Driven Deep Neural Networks,'' /Proc. of IEEE Data Science Workshop/, Minneapolis, MN, June 2-5, 2019.
 . J. Chen, *G. Wang*, and G. B. Giannakis, ``Multiview Canonical Correlation Analysis over Graphs,'' /Proc. of Intl. Conf. on Acoustics, Speech, and Signal Processing/, Brighton, UK, May 12-17, 2019.
 . L. Zhang, *G. Wang*, and G. B. Giannakis, ``Power System State Forecasting via Deep Recurrent Neural Networks,'' /Proc. of Intl. Conf. on Acoustics, Speech, and Signal Processing/, Brighton, UK, May 12-17, 2019.
 . J. Chen, *G. Wang*, and G. B. Giannakis, ``Nonlinear Discriminative Dimensionality Reduction of Multiple Datasets,'' /Proc. of Asilomar Conf. on Signals, Systems, and Computers/, Pacific Grove, CA, November 2-5, 2018.
