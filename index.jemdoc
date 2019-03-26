@@ -3,15 +3,17 @@
 #[https://jemnz.com/ Jacob Mattingley] ([www@jemnz.com])
 
 ~~~
-{}{img_left}{figures/wang.jpg}{alt text}{70%}{12%}
+{}{img_left}{figures/wang.jpg}{alt text}{140px}{140px}
 
 Hi, welcome to my personal webpage! 
 I'm a currently postdoctoral researcher in the Department of Electrical and Computer Engineering
 # [http://www.ece.umn.edu/ Department of Electrical and Computer Engineering]
-at the University of Minnesota
+at the University of Minnesota, 
 # [http://twin-cities.umn.edu/ University of Minnesota], 
-where I am a member of the [http://spincom.umn.edu SPiNCOM] 
-I am a member of the SPiNCOM group directed by Prof. [http://spincom.umn.edu/georgios/ Georgios B. Giannakis]. I earned my Bachelor degree from the Beijing Institute of Technology,
+where I work with 
+#I am a member of the [http://spincom.umn.edu SPiNCOM] 
+#I am a member of the SPiNCOM group directed by 
+Prof. [http://spincom.umn.edu/georgios/ Georgios B. Giannakis]. I earned my Bachelor degree from the Beijing Institute of Technology,
 #[http://www.bit.edu.cn Beijing Institute of Technology], 
 Beijing, China in 2011, and Ph.D. degree from the University of Minnesota in 2018, both in Electrical Engineering.
 
@@ -21,7 +23,7 @@ Beijing, China in 2011, and Ph.D. degree from the University of Minnesota in 201
 Digital Technology Center\n
 University of Minnesota, Minneapolis\n
 117 Pleasant Street SE, Minneapolis, MN, 55455\n
-Office: Room 460 Walter Library\n
+Office: Room 427 Walter Library\n
 E-mail: gangwang *AT* umn.edu.
 #,
 
