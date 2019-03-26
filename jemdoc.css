@@ -22,7 +22,7 @@ body {
 	font-size: 1.2em;
 	width: auto;
 	white-space: nowrap;
-    text-align: left;
+    text-align: justify;
     vertical-align: top;
 }
 
@@ -34,10 +34,10 @@ body {
 #layout-content {
 	padding-top: 1.0em;
 	padding-left: 2%;
-	padding-right: 30%;;
+	padding-right: 38.2%;;
     border: none;
     background: white;
-    text-align: left;
+    text-align: justify;
     vertical-align: top;
 }
 
@@ -363,5 +363,5 @@ img {
 
 table.imgtable, table.imgtable td {
     border: none;
-    text-align: left;
+    text-align: justify;
 }
