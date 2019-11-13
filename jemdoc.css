@@ -18,7 +18,7 @@ body {
 	border: 1px solid #dddddd;
 	padding-top: 0.5em;
 	padding-left: 5px;
-	padding-right: 10px;
+	padding-right: 6px;
 	font-size: 1.2em;
 	width: auto;
 	white-space: nowrap;
@@ -34,7 +34,7 @@ body {
 #layout-content {
 	padding-top: 1.0em;
 	padding-left: 2%;
-	padding-right: 38.2%;;
+	padding-right: 25.2%;;
     border: none;
     background: white;
     text-align: justify;
