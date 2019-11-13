@@ -14,7 +14,6 @@
 
 
 == Journal Papers
-
 . Q. Yang, *G. Wang*, A. Sadeghi, G. B. Giannakis, and J. Sun, "Two-Timescale Voltage Control in Distribution Grids Using Deep Reinforcement Learning," /IEEE Transactions on Smart Grid/, to appear March 2020. 
 . G. Wu, *G. Wang*, and J. Sun, ``Optimal Switching Data Injection Attacks and Countermeasures in Cyber-Physical Systems,” /IEEE Transactions Systems, Man, and Cybernetics: Systems/, to appear December 2019.
 . *G. Wang*, H. Zhu, G. B. Giannakis, and J. Sun, ``Robust Power System State Estimation from Rank-One Measurements," /IEEE Transactions on Control of Network Systems/, to appear December 2019.
@@ -22,8 +21,8 @@
 . *G. Wang*, G. B. Giannakis, and J. Chen, ``Robust and Scalable Power System State Estimation Using Composite Optimization,’’ /IEEE Transactions on Smart Grid/, vol. 10, no. 6, pp. 6137-6147, November 2019.
 . M. Xiong, Q. Liu, *G. Wang*, G. B. Giannakis, and C. Huang, "Resonant Beam Communications: Principles and Designs," /IEEE Communications Magazine/, vol. 57, no. 10, pp. 34-39, October 2019.
 . L. Zhang, *G. Wang*, and G. B. Giannakis, ``Real-time Power System State Estimation and Forecasting via Deep Neural Networks,” /IEEE Transactions on Signal Processing/, vol. 67, no. 15, pp. 4069-4077, August 2019. [https://github.com/LiangZhangUMN/PSSE-via-DNNs Python code available here]
-#. M. Liu, *G. Wang*, G. B. Giuannakis, M. Xiong, Q. Liu, and P. Xia, ``Wireless Power Transfer Deployment in IoT,'' /IEEE Internet of Things Journal/, to appear December 2019.
-#. W. Fang, *G. Wang*, G. B. Giannakis, Q. Liu, and P. Xia, ``Channel-Dependent Scheduling in Wireless Power Transferfor IoT Devices,'' /IEEE Internet of Things Journal/, submitted January, 2019.
+#. M. Liu, *G. Wang*, G. B. Giannakis, M. Xiong, Q. Liu, and P. Xia, ``Wireless Power Transfer Deployment in IoT,'' /IEEE Internet of Things Journal/, to appear December 2019.
+#. W. Fang, *G. Wang*, G. B. Giannakis, Q. Liu, and P. Xia, ``Channel-Dependent Scheduling in Wireless Power Transfer for IoT Devices,'' /IEEE Internet of Things Journal/, submitted January, 2019.
 . J. Chen, *G. Wang*, and G. B. Giannakis, ``Graph Multiview Canonical Correlation Analysis," /IEEE Transactions on Signal Processing/, vol. 67, no. 11, pp. 2826-2838, June 2019.
 . *G. Wang*, G. B. Giannakis, and J. Chen, ``Learning ReLU Networks on Linearly Separable Data: Algorithm, Optimality, and Generalization," /IEEE Transactions on Signal Processing/, vol. 67, no. 9, pp. 2357-2370, May 2019. [/codes/relus (Website and codes)].
 . *G. Wang*, J. Chen, G. B. Giannakis, and J. Sun, ``Distribution System State Estimation: An Overview of Recent Developments,” /Springer Frontiers of Information Technology & Electronic Engineering/, vol. 20, no. 1, pp. 1-14, January 2019. 
@@ -41,7 +40,6 @@
 
 
 == Conference/Workshop Papers
-
 . Q. Yang, *G. Wang*, A. Sadeghi, and G. B. Giannakis, ``Two-Timescale Voltage Regulation in Distribution Grids Using Deep Reinforcement Learning,'' /Proc. of Intl. Conf. on Communications, Control, and Computing Technol. for Smart Grids/, Beijing, P. R. China, October 21-24, 2019.
 #. *G. Wang*, G. B. Giannakis, and J. Chen, ``Learning ReLU Networks on Linearly Separable Data: Algorithm, Optimality, and Generalization,'' /Proc. of Intl. Conf. on Machine Learning/, Long Beach, CA, June 16-18, 2019 (submitted).
 . *G. Wang*, G. B. Giannakis, and J. Chen, ``Fast Least-Absolute-Value Solver via Composite Optimization,'' /Proc. of IEEE PES General Mtg./, Atlanta, GA, August 4-8, 2019 (*Best Conference Paper*).
