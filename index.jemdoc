@@ -53,6 +53,7 @@ E-mail: gangwang *AT* umn.edu.
 
 
 == Recent news
+<<<<<<< HEAD
 . 10/2019: Paper "Learning Connectivity and Higher-Order Interactions in Radial Distribution Grids" submitted to *Proc. of Intl. Conf. on Acoustics, Speech, and Signal Process.*, May 2020 [https://arxiv.org/pdf/1911.03072.pdf (pdf)]
 . 10/2019: Check our paper "Finite-Sample Analysis of Decentralized Temporal-Difference Learning with Linear Function Approximation", which provides finite-time error bounds for decentralized temporal-difference learning from Markovian samples [https://arxiv.org/pdf/1911.00934.pdf (pdf)]
 . 10/2019: Paper "Two-Timescale Voltage Control in Distribution Grids Using Deep Reinforcement Learning" was accepted to the *IEEE Transactions on Smart Grid*.
@@ -76,6 +77,29 @@ E-mail: gangwang *AT* umn.edu.
 . 3/2018: Check our new submission on graph canonical correlation analysis. Check it out [papers/gcca (pdf)]
 . 3/2018: Paper ``Phase Retrieval via Reweighted Amplitude Flow” was accepted to the *IEEE Transactions on Signal Processing*. Matlab codes available for download [http://gangumn.github.io/RAF/ here]
 . 10/2017: Paper on ``Sparse Phase Retrieval via Truncated Amplitude Flow” accepted to the *IEEE Transactions on Signal Processing*. Matlab codes available for download [http://gangumn.github.io/SPARTA/ here]
+=======
+. 9/2019: Appointed as editorial board member of the prestigious journal [https://www.journals.elsevier.com/signal-processing Signal Processing].
+. 9/2019: Paper "Optimal Switching Data Injection Attacks and Countermeasures in Cyber-Physical Systems” was accepted to the *IEEE Transactions on Systems, Man, and Cybernetics: Systems*. 
+. 9/2019: My first paper on reinforcement learning theory "A Multistep Lyapunov Approach for Finite-Time Analysis of Biased Stochastic Approximation".
+. 8/2019: Presented our paper "Fast LAV Estimation via Composite Optimization" in the *Best Conference Papers* session at the 2019 IEEE Power and Energy Society General Meeting.
+. 7/2019: Paper "Deep Reinforcement Learning for Adaptive Caching in Hierarchical Content Delivery Networks" was accepted to the *IEEE Transactions on Cognitive Communications and Networking*.
+. 6/2019: Served as a TPC member of the *International Conference on Wireless Communications and Signal Processing*.
+. 6/2019: Paper "Mobile Energy Transfer in Internet of Things" was accepted to the *IEEE Internet of Things Journal*.
+. 5/2019: Paper "Real-Time Power System State Estimation and Forecasting via Deep Unrolled Neural Networks" was accepted to the *IEEE Transactions on Signal Processing*.
+. 2/2019: Served as a TPC member of the *IEEE Data Science Workshop*.
+. 1/2019: Paper "Robust and Scalable Power System State Estimation via Composite Optimization" was accepted to the *IEEE Transactions on Smart Grid*.
+. 11/2018: Paper on nonlinear discriminative dimensionality reduction was presented in Asilomar.
+. 11/2018: Paper "Robust Power System State Estimation from Rank-One Measurements" was accepted to the *IEEE Transactions on Control of Network Systems*.
+. 10/2018: Paper on deep neural networks for power system state estimation was submitted to ICASSP'2019.
+. 7/2018: My 1st paper on deep learning theory "Learning Single-Hidden-Layer ReLU Networks on Linearly Separable Data: Algorithms, Optimality, and Generalization."
+. 5/2018: Paper on graph canonical correlation analysis was accepted to the *IEEE Transactions on Signal Processing*.
+
+
+. 3/2018: Defended thesis on ``Non-convex Phase Retrieval Algorithms and Performance Analysis.” 
+. 3/2018: Check our new submission on graph canonical correlation analysis. Check it out [papers/gcca here].
+. 3/2018: Paper ``Phase Retrieval via Reweighted Amplitude Flow” was accepted to the *IEEE Transactions on Signal Processing*. Matlab codes available for download [http://gangumn.github.io/RAF/ here].
+. 10/2017: Paper on ``Sparse Phase Retrieval via Truncated Amplitude Flow” accepted to the *IEEE Transactions on Signal Processing*. Matlab codes available for download [http://gangumn.github.io/SPARTA/ here].
+>>>>>>> master
 . 10/2017: Paper on ``Discriminative Principal Component Analysis” for joint analysis of multiple large-scale datasets submitted. Available [https://arxiv.org/pdf/1710.09429.pdf here]. Check it out!
 . 9/2017: We won a *Best Student Paper Award* in the EUSIPCO’2017 Conference for the joint work with Profs. G. B. Giannakis and J. Chen on efficient algorithms for large-scale phase retrieval, which was selected from a few hundred submissions based on rigorous evaluations of the selection committee
 . 8/2017: Paper coauthored with Profs. G. B. Giannakis, Y. Saad (CS, UMN), and J. Chen (BIT) accepted to *NIPS’2017* (Acceptance rate: 21%), which presents a new algorithm for solving systems of random quadratic equations benchmarking the numerical performance.
