@@ -14,6 +14,7 @@
 
 
 == Journal Papers
+
 . Q. Yang, *G. Wang*, A. Sadeghi, G. B. Giannakis, and J. Sun, "Two-Timescale Voltage Control in Distribution Grids Using Deep Reinforcement Learning," /IEEE Transactions on Smart Grid/, to appear March 2020. 
 . G. Wu, *G. Wang*, and J. Sun, ``Optimal Switching Data Injection Attacks and Countermeasures in Cyber-Physical Systems,” /IEEE Transactions Systems, Man, and Cybernetics: Systems/, to appear December 2019.
 . *G. Wang*, H. Zhu, G. B. Giannakis, and J. Sun, ``Robust Power System State Estimation from Rank-One Measurements," /IEEE Transactions on Control of Network Systems/, to appear December 2019.
@@ -40,6 +41,7 @@
 
 
 == Conference/Workshop Papers
+
 . Q. Yang, *G. Wang*, A. Sadeghi, and G. B. Giannakis, ``Two-Timescale Voltage Regulation in Distribution Grids Using Deep Reinforcement Learning,'' /Proc. of Intl. Conf. on Communications, Control, and Computing Technol. for Smart Grids/, Beijing, P. R. China, October 21-24, 2019.
 #. *G. Wang*, G. B. Giannakis, and J. Chen, ``Learning ReLU Networks on Linearly Separable Data: Algorithm, Optimality, and Generalization,'' /Proc. of Intl. Conf. on Machine Learning/, Long Beach, CA, June 16-18, 2019 (submitted).
 . *G. Wang*, G. B. Giannakis, and J. Chen, ``Fast Least-Absolute-Value Solver via Composite Optimization,'' /Proc. of IEEE PES General Mtg./, Atlanta, GA, August 4-8, 2019 (*Best Conference Paper*).
