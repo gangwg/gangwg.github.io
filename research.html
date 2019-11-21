@@ -5,7 +5,7 @@
 <meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <link rel="stylesheet" href="jemdoc.css" type="text/css" />
-<title>Research</title>
+<title></title>
 </head>
 <body>
 <table summary="Table for page layout." id="tlayout">
@@ -18,30 +18,139 @@
 <div class="menu-item"><a href="research.html" class="current">Research</a></div>
 </td>
 <td id="layout-content">
-<div id="toptitle">
-<h1>Research</h1>
-</div>
 <p>My research interests include</p>
 <ul>
-<li><p>High-dimensional structured estimation (e.g., phase retrieval)</p>
+<li><p><b>Data Science, optimization, and signal processing</b>: 
+Multi-view data analysis (graph canonical correlation analysis, discriminative data analytics); compressive phase retrieval; tensor decomposition and completion; non-convex and non-smooth optimization</p>
 </li>
-<li><p>Deep and reinforcement learning theory and applications</p>
+<li><p><b>Machine learning algorithms, theory, and applications</b>: Deep learning algorithms, optimality, and generalization; non-asymptotical analysis of biased stochastic approximation and (multi-agent decentralized) reinforcement learning 
+
+algorithms; data- and model-based control </p>
 </li>
-<li><p>Signal processing and optimization for cyber-physical networks</p>
+<li><p><b>Monitoring and control of cyber-physical energy networks</b>: Stochastic reactive power control; voltage regulation; topology learning; robust power system state estimation; data- and physics-driven state estimation and forecasting </p>
 </li>
 </ul>
-<h2>Solving large-scale quadratic systems in linear time</h2>
-<p>The problem of solving systems of quadratic equations has a plethora of applications ranging from mixed linear regressions to the well-known phase retrieval. Under Gaussian random sampling/feature vectors, we develop simple, scalable, and efficient iterative optimization algorithms that are able to solve a quadratic system when there are about as many equations as unknowns in linear time. It is known in statistical inference and learning that convex formulations are unbounded and thus sensitive to outliers, yet nonconvex ones that are difficult to optimize lead to computationally more scalable and statistically more accurate solution algorithms. We formulate the problem of solving quadratic equations as a nonconvex optimization, and develop two-stage iterative optimization algorithms, that consist of obtaining an orthogonality-promoting initialization first and refining the initialization via truncated/stochastic gradient-type iterations. Empirically, our algorithms recover exactly any real-valued signals when the number of equations is about 3 times the number of unknowns, narrowing the gap from the information-theoretic measurement/unknown ratio 2.</p>
+<h2>Data Science, optimization, and signal processing</h2>
+<h3>High-dimensional statistical signal processing with applications to phase retrieval</h3>
+<p>The problem of solving systems of quadratic equations has a plethora of applications ranging from mixed linear regressions to the well-known phase retrieval. Under Gaussian random sampling/feature vectors, we develop simple, scalable, and efficient iterative optimization algorithms that are able to solve a quadratic system when there are about as many equations as unknowns in linear time. It is known in statistical inference and learning that convex formulations are unbounded and thus sensitive to outliers, yet non-convex ones that are difficult to optimize lead to computationally more scalable and statistically more accurate solution algorithms. We formulate the problem of solving quadratic equations as a non-convex optimization, and develop two-stage iterative optimization algorithms, that consist of obtaining an orthogonality-promoting initialization first and refining the initialization via truncated/stochastic gradient-type iterations. Empirically, our algorithms recover exactly any real-valued signals when the number of equations is about 3 times the number of unknowns, narrowing the gap from the information-theoretic measurement/unknown ratio 2.</p>
 <table class="imgtable"><tr><td>
 <img src="figures/irate.jpg" alt="alt text" width="440px" height="340px" />&nbsp;</td>
 <td align="left"></td></tr></table>
 <ol>
-<li><p>G. Wang, G. B. Giannakis, and Y. C. Eldar, &lsquo;&lsquo;Solving Systems of Random Quadratic Equations via Truncated Amplitude Flow,’’ <i>IEEE Transactions on Information Theory</i>, submitted July 2016. <a href="papers/taf2016">(Preprint)</a>. </p>
+<li><p><b>G. Wang</b>, G. B. Giannakis, Y. Saad, and J. Chen, &lsquo;&lsquo;Phase Retrieval via Reweighted Amplitude Flow," <i>IEEE Transactions on Signal Processing</i>, vol. 66, no. 11, pp. 2818-2833, June 2018.</p>
+</li>
+<li><p><b>G. Wang</b>, G. B. Giannakis, and J. Chen &lsquo;&lsquo;Solving Large-scale Systems of Random Quadratic Equations via Stochastic Truncated Amplitude Flow,’’ <i>Proc. of EUSIPCO</i>, Kos Island, Greece, August 28-Sept. 3, 2017. (<b>Best Student Paper</b>). </p>
+</li>
+<li><p><b>G. Wang</b>, G. B. Giannakis, and Y. Eldar, &lsquo;&lsquo;Solving Random Systems of Quadratic Equations via Truncated Amplitude Flow," <i>IEEE Transactions on Information Theory</i>, vol. 64, no. 2, pp. 773-794, February 2018. <a href="papers/taf2016">(Preprint)</a>. <a href="/TAF">(Website and codes)</a>.</p>
 </li>
 <li><p>G. Wang and G. B. Giannakis, &lsquo;&lsquo;Solving Random Systems of Quadratic Equations via Truncated Generalized Gradient Flow,’’ in <i>The Thirtieth Annual Conf. on Neural Information Processing Systems</i>, Barcelona, Spain, December 5-10, 2016 <a href="https://arxiv.org/abs/1605.08285">(Preprint)</a>. </p>
 </li>
 </ol>
-<h2>Stochastic energy management in power distribution grids</h2>
+<h3>Graph multiview canonical correlation analysis </h3>
+<p>Multiview canonical correlation analysis (MCCA)
+seeks latent low-dimensional representations encountered with
+multiview data of shared entities (a.k.a. common sources). However,
+existing MCCA approaches do not exploit the geometry of
+the common sources, which may be available a priori, or can be
+constructed using certain domain knowledge. This prior information
+about the common sources can be encoded by a graph, and be
+invoked as a regularizer to enrich the maximum variance MCCA
+framework. In this context, this paper’s novel graph-regularized
+MCCA (GMCCA) approach minimizes the distance between the
+wanted canonical variables and the common low-dimensional representations,
+while accounting for graph-induced knowledge of the
+common sources. Relying on a function capturing the extent to
+which the low-dimensional representations of the multiple views
+are similar, a generalization bound of GMCCA is established based
+on Rademacher’s complexity.Tailored for setups where the number
+of data pairs is smaller than the data vector dimensions, a graph regularized
+dual MCCA approach is also developed. To further
+deal with nonlinearities present in the data, graph-regularized kernelMCCA
+variants are put forward too. Interestingly, solutions of
+the graph-regularized linear, dual, and kernel MCCA are all provided
+in terms of generalized eigenvalue decomposition. Several
+corroborating numerical tests using real datasets are provided to
+showcase the merits of the graph-regularized MCCA variants relative
+to several competing alternatives including MCCA, Laplacian regularized
+MCCA, and (graph-regularized) PCA.</p>
+<table class="imgtable"><tr><td>
+<img src="figures/uci.pdf" alt="alt text" width="440px" height="340px" />&nbsp;</td>
+<td align="left"><p>(a) Proposed GMCCA<br />
+(b) Vanilla MCCA<br />
+(c) Graph PCA<br />
+(d) Vanilla PCA</p>
+</td></tr></table>
+<ol>
+<li><p>J. Chen, <b>G. Wang</b>, and G. B. Giannakis, &lsquo;&lsquo;Graph Multiview Canonical Correlation Analysis," <i>IEEE Transactions on Signal Processing</i>, vol. 67, no. 11, pp. 2826-2838, June 2019.</p>
+</li>
+<li><p>J. Chen, <b>G. Wang</b>, Y. Shen, and G. B. Giannakis, &lsquo;&lsquo;Canonical Correlation Analysis of Datasets with a Common Source Graph," <i>IEEE Transactions on Signal Processing</i>, vol. 66, no. 16, pp. 4398-4408, August 2018.</p>
+</li>
+<li><p>J. Chen, <b>G. Wang</b>, and G. B. Giannakis, &lsquo;&lsquo;Multiview Canonical Correlation Analysis over Graphs,&rsquo;&rsquo; <i>Proc. of Intl. Conf. on Acoustics, Speech, and Signal Processing</i>, Brighton, UK, May 12-17, 2019.</p>
+</li>
+</ol>
+<h3>Nonlinear discriminative data analytics</h3>
+<p>Principal component analysis (PCA) is widely used
+for feature extraction and dimensionality reduction, with documented
+merits in diverse tasks involving high-dimensional data.
+PCA copes with one dataset at a time, but it is challenged when
+it comes to analyzing multiple datasets jointly. In certain data science
+settings however, one is often interested in extracting the most
+discriminative information from one dataset of particular interest
+(a.k.a. target data) relative to the other(s) (a.k.a. background
+data). To this end, this paper puts forth a novel approach, termed
+discriminative (d) PCA, for such discriminative analytics of multiple
+datasets. Under certain conditions, dPCA is proved to be least-squares
+optimal in recovering the latent subspace vector unique to
+the target data relative to background data. To account for nonlinear
+data correlations, (linear) dPCA models for one or multiple
+background datasets are generalized through kernel-based learning.
+Interestingly, all dPCA variants admit an analytical solution
+obtainable with a single (generalized) eigenvalue decomposition.
+Finally, substantial dimensionality reduction tests using synthetic
+and real datasets are provided to corroborate the merits of the
+proposed methods.</p>
+<table class="imgtable"><tr><td>
+<img src="figures/mice.pdf" alt="alt text" width="380px" height="540px" />&nbsp;</td>
+<td align="left"></td></tr></table>
+<ol>
+<li><p><b>G. Wang</b>, J. Chen, and G. B. Giannakis, &ldquo;DPCA: Dimensionality Reduction for Discriminative Analytics of Multiple Large-Scale Datasets,&rdquo; <i>Proc. of Intl. Conf. on Acoustics, Speech, and Signal Processing</i>, Calgary, Canada, April 15-20, 2018.</p>
+</li>
+<li><p>J. Chen, <b>G. Wang</b>, and G. B. Giannakis, &lsquo;&lsquo;Nonlinear Discriminative Dimensionality Reduction of Multiple Datasets,&rsquo;&rsquo; <i>Proc. of Asilomar Conf. on Signals, Systems, and Computers</i>, Pacific Grove, CA, November 2-5, 2018.</p>
+</li>
+<li><p>J. Chen, <b>G. Wang</b>, and G. B. Giannakis, &lsquo;&lsquo;Nonlinear Dimensionality Reduction for Discriminative Analytics of Multiple Datasets," <i>IEEE Transactions on Signal Processing</i>, vol. 67, no. 3, pp. 740-753, Feburary 2019.</p>
+</li>
+</ol>
+<h2>Machine learning algorithms, theory, and applications</h2>
+<h3>Learning ReLU neural networks: algorithms, optimality, and generalization</h3>
+<p>Neural networks with rectified linear unit (ReLU) activation functions (a.k.a. ReLU networks) have achieved great empirical success in various domains. Nonetheless, existing results for learning ReLU networks either pose assumptions on the underlying data distribution being, e.g., Gaussian, or require the network size or training size to be sufficiently large. In this context, the problem of learning a two-layer ReLU network is approached in a binary classification setting, where the data are linearly separable and a hinge loss criterion is adopted. Leveraging the power of random noise perturbation, this paper presents a novel stochastic gradient descent (SGD) algorithm, which can provably train any single-hidden-layer ReLU network to attain global optimality, despite the presence of infinitely many bad local minima, maxima, and saddle points in general. This result is the first of its kind, requiring no assumptions on the data distribution, training/network size, or initialization. Convergence of the resultant iterative algorithm to a global minimum is analyzed by establishing both an upper bound and a lower bound on the number of non-zero updates to be performed. Moreover, generalization guarantees are developed for ReLU networks trained with the novel SGD leveraging classic compression bounds. These guarantees highlight a key difference (at least in the worst case) between reliably learning a ReLU network as well as a leaky ReLU network in terms of sample complexity. Numerical tests using both synthetic data and real images validate the effectiveness of the algorithm and the practical merits of the theory.</p>
+<table class="imgtable"><tr><td>
+<img src="figures/relus.pdf" alt="alt text" width="440px" height="340px" />&nbsp;</td>
+<td align="left"></td></tr></table>
+<div class="infoblock">
+<div class="blocktitle"></div>
+<div class="blockcontent">
+<p>Our modified stochastic gradient descent algorithm (with principled noise injection into activity indicator function of the ReLU activation function) provably escapes local minima and saddle points to reach a global minimizer.</p>
+</div></div>
+<ol>
+<li><p><b>G. Wang</b>, G. B. Giannakis, and J. Chen, &lsquo;&lsquo;Learning ReLU Networks on Linearly Separable Data: Algorithm, Optimality, and Generalization," <i>IEEE Transactions on Signal Processing</i>, vol. 67, no. 9, pp. 2357-2370, May 2019. <a href="/codes/relus">(Website and codes)</a>.</p>
+</li>
+<li><p>L. Zhang, <b>G. Wang</b>, and G. B. Giannakis, &lsquo;&lsquo;Real-time Power System State Estimation and Forecasting via Deep Neural Networks,” <i>IEEE Transactions on Signal Processing</i>, vol. 67, no. 15, pp. 4069-4077, August 2019. <a href="https://github.com/LiangZhangUMN/PSSE-via-DNNs">Python code available here</a></p>
+</li>
+</ol>
+<h3>Finite-time analysis of biased stochastic approximation algorithms with applications to (multi-agent decentralized) reinforcement learning</h3>
+<p>Motivated by the widespread use of temporal-difference (TD-) and Q-learning algorithms in reinforcement learning, this paper studies a class of biased stochastic approximation (SA) procedures under a mild “ergodic-like” assumption on the underlying stochastic noise sequence. Building upon a carefully designed multistep Lyapunov function that looks ahead to several future updates to accommodate the stochastic perturbations (for control of the gradient bias), we prove a general result on the convergence of the iterates, and use it to derive non-asymptotic bounds on the mean-square error in the case of constant stepsizes. This novel looking-ahead viewpoint renders finite-time analysis of biased SA algorithms under a large family of stochastic perturbations possible. For direct comparison with existing contributions, we also demonstrate these bounds by applying them to TD- and Q-learning with linear function approximation, under the practical Markov chain observation model. The resultant finite-time error bound for both the TD- as well as the Q-learning algorithms is the first of its kind, in the sense that it holds i) for the unmodified versions (i.e., without making any modifications to the parameter updates) using even nonlinear function approximators; as well as for Markov chains ii) under general mixing conditions and iii) starting from any initial distribution, at least one of which has to be violated for existing results to be applicable.</p>
+<ol>
+<li><p><b>G. Wang</b>, B. Li, and G. B. Giannakis, &lsquo;&lsquo;A Multistep Lyapunov Approach for Finite-Time Analysis of Biased Stochastic Approximation,&rsquo;&rsquo; submitted October 2019. <a href="https://arxiv.org/pdf/1909.04299.pdf">(pdf)</a></p>
+</li>
+<li><p>J. Sun, <b>G. Wang</b>, G. B. Giannakis, Q. Yang, and Z. Yang, &lsquo;&lsquo;Finite-Sample Analysis of Decentralized Temporal-Difference Learning with Linear Function Approximation,&rsquo;&rsquo; submitted November 2019. <a href="https://arxiv.org/pdf/1911.00934.pdf">(pdf)</a></p>
+</li>
+<li><p>Q. Yang, <b>G. Wang</b>, A. Sadeghi, G. B. Giannakis, and J. Sun, &ldquo;Two-Timescale Voltage Control in Distribution Grids Using Deep Reinforcement Learning,&rdquo; <i>IEEE Transactions on Smart Grid</i>, to appear March 2020. </p>
+</li>
+<li><p>A. Sadeghi, <b>G. Wang</b>, and G. B. Giannakis, &lsquo;&lsquo;Deep Reinforcement Learning for Adaptive Caching in Hierarchical Content Delivery Networks,” <i>IEEE Transactions on Cognitive Communication and Networking</i>, to appear December 2019.</p>
+</li>
+</ol>
+<h2>Monitoring and control of cyber-physical power systems</h2>
+<h3>Stochastic energy management in power distribution grids</h3>
 <p>Distribution microgrids are currently being challenged by voltage fluctuations due to renewable generation, demand response, and electric vehicles. Advances in photovoltaic (PV) inverters offer new opportunities for reactive power management, provided PV owners have the right investment incentives. Accounting for the increasing time-variability of distributed generation and demand, a stochastic reactive power compensation scheme is developed. The scheme is distribution-free, and it relies solely on real-time power injection data. Numerical tests on an industrial 47-bus microgrid and the residential IEEE 123-bus feeder corroborate its superiority over its deterministic alternative, as well as its capability to track variations in solar generation and household demand.</p>
 <table class="imgtable"><tr><td>
 <img src="figures/movie.jpg" alt="alt text" width="700px" height="340px" />&nbsp;</td>
@@ -58,7 +167,7 @@
 </ol>
 <div id="footer">
 <div id="footer-text">
-Page generated 2019-11-17 13:26:45 CST, by <a href="http://jemdoc.jaboc.net/">jemdoc</a>.
+Page generated 2019-11-20 22:51:33 CST, by <a href="http://jemdoc.jaboc.net/">jemdoc</a>.
 (<a href="research.jemdoc">source</a>)
 </div>
 </div>
