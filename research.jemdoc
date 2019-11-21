@@ -2,12 +2,14 @@
 = Research
 
 My research interests include
-- High-dimensional structured estimation (e.g., phase retrieval)
-- Deep and reinforcement learning theory and applications
-- Signal processing and optimization for cyber-physical networks
+- Data Science, optimization, and signal processing: multi-view data analysis (graph canonical correlation analysis, discriminative data analytics); compressive phase retrieval; tensor completion
+# Multi-view data analysis and high-dimensional signal processing: phase retrieval, tensor completion
+- Machine learning theory and applications: deep learning algorithms, optimality, and generalization; non-asymptotical analysis of (multi-agent decentralized) reinforcement learning algorithms (temporal-difference learning, Q-learning); data- and model-based control 
+- Monitoring and management of cyber-physical energy networks: robust power system state estimation; 
+reactive power control; smart inverters; topology learning; voltage regulation; data- and physics-driven deep learning
 
 == Solving large-scale quadratic systems in linear time
-The problem of solving systems of quadratic equations has a plethora of applications ranging from mixed linear regressions to the well-known phase retrieval. Under Gaussian random sampling\/feature vectors, we develop simple, scalable, and efficient iterative optimization algorithms that are able to solve a quadratic system when there are about as many equations as unknowns in linear time. It is known in statistical inference and learning that convex formulations are unbounded and thus sensitive to outliers, yet nonconvex ones that are difficult to optimize lead to computationally more scalable and statistically more accurate solution algorithms. We formulate the problem of solving quadratic equations as a nonconvex optimization, and develop two-stage iterative optimization algorithms, that consist of obtaining an orthogonality-promoting initialization first and refining the initialization via truncated\/stochastic gradient-type iterations. Empirically, our algorithms recover exactly any real-valued signals when the number of equations is about 3 times the number of unknowns, narrowing the gap from the information-theoretic measurement/unknown ratio 2.
+The problem of solving systems of quadratic equations has a plethora of applications ranging from mixed linear regressions to the well-known phase retrieval. Under Gaussian random sampling\/feature vectors, we develop simple, scalable, and efficient iterative optimization algorithms that are able to solve a quadratic system when there are about as many equations as unknowns in linear time. It is known in statistical inference and learning that convex formulations are unbounded and thus sensitive to outliers, yet non-convex ones that are difficult to optimize lead to computationally more scalable and statistically more accurate solution algorithms. We formulate the problem of solving quadratic equations as a non-convex optimization, and develop two-stage iterative optimization algorithms, that consist of obtaining an orthogonality-promoting initialization first and refining the initialization via truncated\/stochastic gradient-type iterations. Empirically, our algorithms recover exactly any real-valued signals when the number of equations is about 3 times the number of unknowns, narrowing the gap from the information-theoretic measurement/unknown ratio 2.
 
 ~~~
 {}{img_left}{figures/irate.jpg}{alt text}{440}{340} 
