@@ -12,15 +12,15 @@ body {
 	padding-bottom: 8px;
 	# margin: 4em;
 	margin-left: 0.em;
-	margin-right: 160px;
+	margin-right: 220px;
 }
 
-#layout-menu {
+layout-menu {
 	background: #f6f6f6;
-	border: 2px solid #dddddd;
+	border: 0px solid #dddddd;
 	padding-top: 0.5em;
 	padding-left: 8px;
-	padding-right: 8px;
+	padding-right: 0px;
 	font-size: 1.0em;
 	width: auto;
 	white-space: nowrap;
@@ -80,15 +80,15 @@ a:hover {
 
 div.menu-category {
 	border-bottom: 1px solid gray;
-	margin-top: 0.8em;
-	padding-top: 0.2em;
-	padding-bottom: 0.1em;
+	margin-top: 1em;
+	padding-top: 0.4em;
+	padding-bottom: 0.2em;
 	font-weight: bold;
 }
 
 div.menu-item {
-	padding-left: 16px;
-	text-indent: -16px;
+	padding-left: 20px;
+	text-indent: -20px;
 }
 
 div#toptitle {
@@ -123,7 +123,7 @@ h1, h2, h3 {
 	margin-top: 0.7em;
 	margin-bottom: 0.3em;
 	padding-bottom: 0.2em;
-	line-height: 1.0;
+	line-height: .8;
 	padding-top: 0.5em;
 	border-bottom: 1px solid #aaaaaa;
 }
@@ -234,7 +234,7 @@ p + div.codeblock {
 }
 
 div.codeblock, div.infoblock {
-	margin-right: 0%;
+	margin-right: 10%;
 	margin-top: 1.2em;
 	margin-bottom: 1.3em;
 }
@@ -345,7 +345,7 @@ table {
 td {
     padding: 2px;
     padding-left: 0.5em;
-    padding-right: 0.5em;
+    padding-right: 0.2em;
     text-align: center;
     border: 1px solid gray;
 }
