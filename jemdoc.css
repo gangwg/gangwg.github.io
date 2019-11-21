@@ -7,22 +7,24 @@ table#tlayout {
 }
 
 body {
-	background: white;
+	background: #f2f2f2;
 	font-family: Georgia, serif;
 	padding-bottom: 8px;
-	margin: 0;
+	# margin: 4em;
+	margin-left: 0.em;
+	margin-right: 160px;
 }
 
 #layout-menu {
 	background: #f6f6f6;
-	border: 1px solid #dddddd;
+	border: 2px solid #dddddd;
 	padding-top: 0.5em;
-	padding-left: 5px;
-	padding-right: 10px;
-	font-size: 1.2em;
+	padding-left: 8px;
+	padding-right: 8px;
+	font-size: 1.0em;
 	width: auto;
 	white-space: nowrap;
-    text-align: justify;
+    text-align: left;
     vertical-align: top;
 }
 
@@ -32,18 +34,18 @@ body {
 }
 
 #layout-content {
-	padding-top: 1.0em;
-	padding-left: 2%;
-	padding-right: 38.2%;;
+	padding-top: 0.0em;
+	padding-left: 1.0em;
+	padding-right: 8.0em;
     border: none;
     background: white;
-    text-align: justify;
+    text-align: left;
     vertical-align: top;
 }
 
 #layout-menu a {
-	line-height: 1.6em;
-	margin-left: .8em;
+	line-height: 1.5em;
+	margin-left: 0.5em;
 }
 
 tt {
@@ -121,7 +123,7 @@ h1, h2, h3 {
 	margin-top: 0.7em;
 	margin-bottom: 0.3em;
 	padding-bottom: 0.2em;
-	line-height: 1.2;
+	line-height: 1.0;
 	padding-top: 0.5em;
 	border-bottom: 1px solid #aaaaaa;
 }
@@ -131,8 +133,8 @@ h1 {
 }
 
 h2 {
-	padding-top: 1em;
-	font-size: 150%;
+	padding-top: 0.8em;
+	font-size: 125%;
 }
 
 h2 + h3 {
@@ -140,7 +142,7 @@ h2 + h3 {
 }
 
 h3 {
-	font-size: 120%;
+	font-size: 110%;
 	border-bottom: none;
 }
 
@@ -148,7 +150,7 @@ p {
 	margin-top: 0.0em;
 	margin-bottom: 0.8em;
 	padding: 0;
-	line-height: 1.5;
+	line-height: 1.3;
 }
 
 pre {
@@ -305,7 +307,7 @@ span.comment, span.comment > *, span.string, span.string > * {
 }
 
 #fwtitle #toptitle {
-	padding-left: 0.2em;
+	padding-left: 0.5em;
 	margin-bottom: 0.5em;
 }
 
@@ -329,7 +331,7 @@ img.eq {
 }
 
 img.eqwl {
-	padding-left: 1em;
+	padding-left: 2em;
 	padding-top: 0.6em;
 	padding-bottom: 0.2em;
 	margin: 0;
@@ -363,5 +365,5 @@ img {
 
 table.imgtable, table.imgtable td {
     border: none;
-    text-align: justify;
+    text-align: left;
 }
