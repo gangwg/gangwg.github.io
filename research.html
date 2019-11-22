@@ -38,7 +38,7 @@ algorithms; data- and model-based control </p>
 <h3>High-dimensional statistical signal processing with applications to phase retrieval</h3>
 <p>The problem of solving systems of quadratic equations has a plethora of applications ranging from mixed linear regressions to the well-known phase retrieval. Under Gaussian random sampling/feature vectors, we develop simple, scalable, and efficient iterative optimization algorithms that are able to solve a quadratic system when there are about as many equations as unknowns in linear time. It is known in statistical inference and learning that convex formulations are unbounded and thus sensitive to outliers, yet non-convex ones that are difficult to optimize lead to computationally more scalable and statistically more accurate solution algorithms. We formulate the problem of solving quadratic equations as a non-convex optimization, and develop two-stage iterative optimization algorithms, that consist of obtaining an orthogonality-promoting initialization first and refining the initialization via truncated/stochastic gradient-type iterations. Empirically, our algorithms recover exactly any real-valued signals when the number of equations is about 3 times the number of unknowns, narrowing the gap from the information-theoretic measurement/unknown ratio 2.</p>
 <table class="imgtable"><tr><td>
-<img src="figures/irate.jpg" alt="alt text" width="440px" height="340px" />&nbsp;</td>
+<img src="figures/irate.jpg" alt="alt text" width="400px" height="310px" />&nbsp;</td>
 <td align="left"></td></tr></table>
 <ol>
 <li><p><b>G. Wang</b>, G. B. Giannakis, Y. Saad, and J. Chen, &lsquo;&lsquo;Phase Retrieval via Reweighted Amplitude Flow," <i>IEEE Transactions on Signal Processing</i>, vol. 66, no. 11, pp. 2818-2833, June 2018.</p>
@@ -78,7 +78,7 @@ showcase the merits of the graph-regularized MCCA variants relative
 to several competing alternatives including MCCA, Laplacian regularized
 MCCA, and (graph-regularized) PCA.</p>
 <table class="imgtable"><tr><td>
-<img src="figures/uci.pdf" alt="alt text" width="440px" height="340px" />&nbsp;</td>
+<img src="figures/uci.pdf" alt="alt text" width="380px" height="310px" />&nbsp;</td>
 <td align="left"><p>(a) Proposed GMCCA<br />
 (b) Vanilla MCCA<br />
 (c) Graph PCA<br />
@@ -128,7 +128,7 @@ proposed methods.</p>
 <h3>Learning ReLU neural networks: algorithms, optimality, and generalization</h3>
 <p>Neural networks with rectified linear unit (ReLU) activation functions (a.k.a. ReLU networks) have achieved great empirical success in various domains. Nonetheless, existing results for learning ReLU networks either pose assumptions on the underlying data distribution being, e.g., Gaussian, or require the network size or training size to be sufficiently large. In this context, the problem of learning a two-layer ReLU network is approached in a binary classification setting, where the data are linearly separable and a hinge loss criterion is adopted. Leveraging the power of random noise perturbation, this paper presents a novel stochastic gradient descent (SGD) algorithm, which can provably train any single-hidden-layer ReLU network to attain global optimality, despite the presence of infinitely many bad local minima, maxima, and saddle points in general. This result is the first of its kind, requiring no assumptions on the data distribution, training/network size, or initialization. Convergence of the resultant iterative algorithm to a global minimum is analyzed by establishing both an upper bound and a lower bound on the number of non-zero updates to be performed. Moreover, generalization guarantees are developed for ReLU networks trained with the novel SGD leveraging classic compression bounds. These guarantees highlight a key difference (at least in the worst case) between reliably learning a ReLU network as well as a leaky ReLU network in terms of sample complexity. Numerical tests using both synthetic data and real images validate the effectiveness of the algorithm and the practical merits of the theory.</p>
 <table class="imgtable"><tr><td>
-<img src="figures/relus.pdf" alt="alt text" width="440px" height="340px" />&nbsp;</td>
+<img src="figures/relus.pdf" alt="alt text" width="400px" height="310px" />&nbsp;</td>
 <td align="left"></td></tr></table>
 <div class="infoblock">
 <div class="blocktitle"></div>
@@ -159,7 +159,7 @@ The resultant finite-time error bounds for (decentralized) TD- and Q-learning al
 <p>In today’s cyber-enabled smart grids, high penetration of uncertain renewables, purposeful manipulation of meter readings, and the need for wide-area situational awareness, call for fast, accurate, and robust power system state estimation. The least-absolute-value (LAV) estimator is known for its robustness relative to the weighted least-squares one. However, due to nonconvexity and nonsmoothness, existing LAV solvers based on linear programming are typically slow and, hence, inadequate for real-time system monitoring. This paper, develops two novel algorithms for efficient LAV estimation, which draw from recent advances in composite optimization. The first is a deterministic linear proximal scheme that handles a sequence of (5 ∼ 10 in general) convex quadratic problems, each efficiently solvable either via off-the-shelf toolboxes or through the alternating direction method of multipliers. Leveraging the sparse connectivity inherent to power networks, the second scheme is stochastic and updates only a few entries of the complex voltage state vector per iteration. In particular, when voltage magnitude and (re)active power flow measurements are used only, this number reduces to one or two regardless of the number of buses in the network. This computational complexity evidently scales well to large-size power systems. Furthermore, by carefully mini-batching the voltage and power flow measurements, accelerated implementation of the stochastic iterations becomes possible. The developed algorithms are numerically evaluated using a variety of benchmark power networks. Simulated tests corroborate that improved robustness can be attained at comparable or markedly reduced computation times for
 medium- or large-size networks relative to existing alternatives.</p>
 <table class="imgtable"><tr><td>
-<img src="figures/tsg.pdf" alt="alt text" width="440px" height="340px" />&nbsp;</td>
+<img src="figures/tsg.pdf" alt="alt text" width="400px" height="310px" />&nbsp;</td>
 <td align="left"></td></tr></table>
 <ol>
 <li><p><b>G. Wang</b>, H. Zhu, G. B. Giannakis, and J. Sun, &ldquo;Robust Power System State Estimation from Rank-One Measurements,&rdquo; <i>IEEE Transactions on Control of Network Systems</i>, to appear December 2019.</p>
@@ -175,19 +175,18 @@ medium- or large-size networks relative to existing alternatives.</p>
 <img src="figures/movie.jpg" alt="alt text" width="700px" height="340px" />&nbsp;</td>
 <td align="left"></td></tr></table>
 <ol>
-<li><p>V. Kekatos, G. Wang, A.-J. Conejo, and G. B. Giannakis, &ldquo;Stochastic Reactive Power Management in Microgrids with Renewables,&rdquo; <i>IEEE Trans. on Power Systems</i>, vol. 30, no. 6, pp. 3386–3395, Aug. 2014. <a href="papers/tps2015kwcg.pdf">(pdf)</a></p>
+<li><p><b>G. Wang</b>, V. Kekatos, A. J. Conejo, and G. B. Giannakis, ‘‘Ergodic Energy Management Leveraging Resource Variability in Distribution Grids,’’ <i>IEEE Transactions on Power Systems</i>, to appear June 2016. <a href="papers/tps2016wkcg.pdf">(pdf)</a></p>
 </li>
-<li><p>V. Kekatos, G. Wang, and G. B. Giannakis, &ldquo;Stochastic Loss Minimization for Power Distribution Networks,&rdquo; in <i>IEEE North American Power Symposium (NAPS)</i>, Pullman, WA, Sep. 2014. <a href="papers/naps2014kwg.pdf">(pdf)</a></p>
+<li><p>V. Kekatos, <b>G. Wang</b>, A. J. Conejo, and G. B. Giannakis, &ldquo;Stochastic Reactive Power Management in Microgrids with Renewables,&rdquo; <i>IEEE Trans. on Power Systems</i>, vol. 30, no. 6, pp. 3386–3395, Aug. 2014. <a href="papers/tps2015kwcg.pdf">(pdf)</a></p>
 </li>
-<li><p>G. Wang, V. Kekatos, A.-J. Conejo, and G. B. Giannakis, ‘‘Ergodic Energy Management Leveraging Resource Variability in Distribution Grids,’’ <i>IEEE Transactions on Power Systems</i>, to appear June 2016. <a href="papers/tps2016wkcg.pdf">(pdf)</a></p>
+<li><p>V. Kekatos, <b>G. Wang</b>, and G. B. Giannakis, &ldquo;Stochastic Loss Minimization for Power Distribution Networks,&rdquo; in <i>IEEE North American Power Symposium (NAPS)</i>, Pullman, WA, Sep. 2014. <a href="papers/naps2014kwg.pdf">(pdf)</a></p>
 </li>
-<li><p>G. Wang, V. Kekatos, and G. B. Giannakis, ‘‘Stochastic Energy Management in Distribution Grids,’’ in <i>Proc. of Intl. Conf. on Acoustics, Speech and Signal Processing</i>, Shanghai, China, March 20-25, 2016. <a href="papers/icassp2016wkg.pdf">(pdf)</a></p>
+<li><p><b>G. Wang</b>, V. Kekatos, and G. B. Giannakis, ‘‘Stochastic Energy Management in Distribution Grids,’’ in <i>Proc. of Intl. Conf. on Acoustics, Speech and Signal Processing</i>, Shanghai, China, March 20-25, 2016. <a href="papers/icassp2016wkg.pdf">(pdf)</a></p>
 </li>
 </ol>
 <div id="footer">
 <div id="footer-text">
-Page generated 2019-11-21 22:50:05 CST, by <a href="http://jemdoc.jaboc.net/">jemdoc</a>.
-(<a href="research.jemdoc">source</a>)
+Page generated 2019-11-21 23:01:02 CST, by <a href="http://jemdoc.jaboc.net/">jemdoc</a>.
 </div>
 </div>
 </td>
