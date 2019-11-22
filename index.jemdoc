@@ -3,23 +3,21 @@
 #[https://jemnz.com/ Jacob Mattingley] ([www@jemnz.com])
 
 ~~~
-{}{img_left}{figures/wang.jpg}{alt text}{140px}{140px}
+{}{img_left}{figures/wang3.jpg}{alt text} # {140px}{140px}
 
 Hi, welcome to my personal webpage! 
-I'm a currently postdoctoral researcher in the Department of Electrical and Computer Engineering
+I'm a currently postdoctoral associate in the Dept. of Electrical and Computer Engineering
 # [http://www.ece.umn.edu/ Department of Electrical and Computer Engineering]
 at the University of Minnesota, 
 # [http://twin-cities.umn.edu/ University of Minnesota], 
-where I work with 
+working with 
 #I am a member of the [http://spincom.umn.edu SPiNCOM] 
 #I am a member of the SPiNCOM group directed by 
-Prof. [http://spincom.umn.edu/georgios/ Georgios B. Giannakis]. I earned my Bachelor degree from the Beijing Institute of Technology,
-#[http://www.bit.edu.cn Beijing Institute of Technology], 
-Beijing, China in 2011, and Ph.D. degree from the University of Minnesota in 2018, both in Electrical Engineering.
+Prof. [http://spincom.umn.edu/georgios/ Georgios B. Giannakis], where I obtained a Ph.D. degree in 2018. I have also earned a Ph.D. degree in Control Science and Engineering, and a B.Eng. degree in Electrical Engineering and Automation, both from #[http://www.bit.edu.cn Beijing Institute of Technology], Beijing, China.
 
 ~~~
 
-== Contact
+== Contact information
 Digital Technology Center\n
 University of Minnesota, Minneapolis\n
 117 Pleasant Street SE, Minneapolis, MN, 55455\n
@@ -52,7 +50,7 @@ E-mail: gangwang *AT* umn.edu.
 # jemdoc: menu{MENU}{contactme.html}, showsource
 
 
-== Recent news
+== Recent updates
 - 11/2019: Received the *Excellent Doctoral Dissertation Award* from the Chinese Association of Automation (CAA). This award recognizes excellent thesis research by doctoral candidates in the field of automation in China; presented annually to up to ten authors.
 - 10/2019: Paper "Learning Connectivity and Higher-Order Interactions in Radial Distribution Grids" submitted to *Proc. of Intl. Conf. on Acoustics, Speech, and Signal Process.*, May 2020 [https://arxiv.org/pdf/1911.03072.pdf (pdf)]
 - 10/2019: Check our paper "Finite-Sample Analysis of Decentralized Temporal-Difference Learning with Linear Function Approximation", which provides finite-time error bounds for decentralized temporal-difference learning from Markovian data samples [https://arxiv.org/pdf/1911.00934.pdf (pdf)]

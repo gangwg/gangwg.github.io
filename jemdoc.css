@@ -1,28 +1,31 @@
 /* Default css file for jemdoc. */
 
 table#tlayout {
+    width:1000px;
     border: none;
-    border-collapse: separate;
-    background: white;
+    border-collapse: separate ;
+    background: #D3h5h5;
 }
 
 body {
-	background: #f2f2f2;
+	background: white;
 	font-family: Georgia, serif;
 	padding-bottom: 8px;
-	# margin: 4em;
-	margin-left: 0.em;
-	margin-right: 220px;
+#	margin: 0;
+	margin-right: 200px;
+	background: #F2F2F2;
+	background-repeat:repeat; */
 }
 
-layout-menu {
-	background: #f6f6f6;
-	border: 0px solid #dddddd;
-	padding-top: 0.5em;
-	padding-left: 8px;
-	padding-right: 0px;
-	font-size: 1.0em;
-	width: auto;
+#layout-menu {
+/* 	background: #f6f6f6; */
+	background: #F3F9FD;
+	border: 2px solid #dddddd;
+	padding-top: 0.2em;
+	padding-left: 10px;
+	padding-right: 10px;
+	font-size: 1.2em;
+	width: 130px;;
 	white-space: nowrap;
     text-align: left;
     vertical-align: top;
@@ -36,7 +39,7 @@ layout-menu {
 #layout-content {
 	padding-top: 0.0em;
 	padding-left: 1.0em;
-	padding-right: 8.0em;
+	padding-right: 1.0em;
     border: none;
     background: white;
     text-align: left;
@@ -58,20 +61,20 @@ pre, tt {
 }
 
 a, a > tt {
-	color: #224b8d;
+ 	color: #224b8d; 
 	text-decoration: none;
 }
 
 a:hover {
-	border-bottom: 1px gray dotted;
+	border-bottom: 2px gray dotted;
 }
 
 #layout-menu a.current:link, #layout-menu a.current:visited {
 	color: #022b6d;
-	border-bottom: 1px gray solid;
+	border-bottom: 2px gray solid;
 }
 #layout-menu a:link, #layout-menu a:visited, #layout-menu a:hover {
-	color: #527bbd;
+ 	color: #527bbd;
 	text-decoration: none;
 }
 #layout-menu a:hover {
@@ -79,22 +82,23 @@ a:hover {
 }
 
 div.menu-category {
-	border-bottom: 1px solid gray;
-	margin-top: 1em;
-	padding-top: 0.4em;
-	padding-bottom: 0.2em;
+	border-bottom: 2px double gray;
+	margin-top: 0.8em;
+	padding-top: 0.15em;
+	padding-bottom: 0.1em;
 	font-weight: bold;
 }
 
 div.menu-item {
-	padding-left: 20px;
-	text-indent: -20px;
+        padding-top: 2px;
+	padding-left: 5px;
+	text-indent: -12px;
 }
 
 div#toptitle {
 	padding-bottom: 0.2em;
 	margin-bottom: 1.5em;
-	border-bottom: 3px double gray;
+	border-bottom: 2px double gray;
 }
 
 /* Reduce space if we begin the page with a title. */
@@ -119,11 +123,11 @@ strong {
 
 
 h1, h2, h3 {
-	color: #527bbd;
+	color: #527DDD;
 	margin-top: 0.7em;
 	margin-bottom: 0.3em;
 	padding-bottom: 0.2em;
-	line-height: .8;
+	line-height: 1.0;
 	padding-top: 0.5em;
 	border-bottom: 1px solid #aaaaaa;
 }
@@ -134,7 +138,7 @@ h1 {
 
 h2 {
 	padding-top: 0.8em;
-	font-size: 125%;
+	font-size: 130%;
 }
 
 h2 + h3 {
@@ -142,9 +146,10 @@ h2 + h3 {
 }
 
 h3 {
-	font-size: 110%;
+	font-size: 130%;
 	border-bottom: none;
 }
+
 
 p {
 	margin-top: 0.0em;
@@ -234,7 +239,7 @@ p + div.codeblock {
 }
 
 div.codeblock, div.infoblock {
-	margin-right: 10%;
+	margin-right: 0%;
 	margin-top: 1.2em;
 	margin-bottom: 1.3em;
 }
@@ -345,7 +350,7 @@ table {
 td {
     padding: 2px;
     padding-left: 0.5em;
-    padding-right: 0.2em;
+    padding-right: 0.5em;
     text-align: center;
     border: 1px solid gray;
 }
