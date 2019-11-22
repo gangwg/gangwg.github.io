@@ -1,7 +1,7 @@
 /* Default css file for jemdoc. */
 
 table#tlayout {
-    width:1080px;
+    width:1039px;
     border: none;
     border-collapse: separate ;
     background: #D3h5h5;
@@ -10,7 +10,7 @@ table#tlayout {
 body {
 	background: white;
 	font-family: Georgia, serif;
-	padding-bottom: 8px;
+	padding-bottom: 80px;
 	# margin: 4em;
 	background: #F6F6F6;
 	margin-left: 0.em;
@@ -70,7 +70,7 @@ tt {
 }
 
 pre, tt {
-	font-size: 80%;
+	font-size: 60%;
 	font-family: monaco, monospace;
 }
 
@@ -154,7 +154,7 @@ h1 {
 
 h2 {
 	padding-top: 0.8em;
-	font-size: 130%;
+	font-size: 135%;
 }
 
 h2 + h3 {
@@ -162,7 +162,7 @@ h2 + h3 {
 }
 
 h3 {
-	font-size: 130%;
+	font-size: 135%;
 	border-bottom: none;
 }
 

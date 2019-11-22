@@ -4,7 +4,7 @@
 
 #[https://jemnz.com/ Jacob Mattingley] ([www@jemnz.com])
 ~~~
-{}{img_left}{spr1000rx.pdf}{alt text}{440}{340}
+{}{img_left}{figures/spr1000rx.pdf}{alt text}{440}{340}
 Given observed data $\{\psi_i\}_{i=1}^m$ and feature vectors $\{a_i\in R^n/C^n\}_{i=1}^m$, our goal is to solve for a $k$-sparse $x$ from a system of (phaseless) quadratic equations
 $\psi_i\approx |\langle a_i,x\rangle|$, $1\le i\le m$.
 

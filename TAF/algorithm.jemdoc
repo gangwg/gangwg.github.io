@@ -9,7 +9,7 @@ Leveraging the Strong Law of Large Numbers (SLLN), spectral initialization metho
  a motivating example is presented first that reveals fundamental characteristics of high-dimensional random vectors.
 
 ~~~
-{}{img_left}{figures/inner.jpg}{alt text}{440}{340}
+{}{img_left}{figures/inner.pdf}{alt text}{440}{340}
 /A curious experiment:/ Fixing any nonzero vector ${x}\in{R}^{n}$, generate data $\psi_i=|\langle {a}_i,{x}\rangle|$ using i.i.d. ${a}_i\sim{N}({0},{I}_n)$, $1\le i\le m$. Then evaluate the following squared normalized inner-product 
 \(\label{eq:nip}
 	\cos^2\theta_i:= \frac{\left|\langle {a}_i,{x}\rangle\right|^2}{\|{a}_i\|^2\|{x}\|^2}=\frac{\psi_i^2}{\|{a}_i\|^2\|{x}\|^2},\quad1\le i\le m,
@@ -53,7 +53,7 @@ Intuitively, the SLLN asserts that averaging the first term ${a}_i{a}_i^T{h}$ ov
 certain generalized gradient entries involve erroneously estimated signs of ${a}_i^T{x}$; hence, nonzero ${r}_i$ terms exert a negative influence on the search direction ${h}$ by dragging the iterate away from ${x}$, and they typically have sizable magnitudes.
 
 ~~~
-{}{img_left}{figures/circle.jpg}{alt text}{440}{320}
+{}{img_left}{figures/circle.pdf}{alt text}{440}{320}
 The geometric understanding of the proposed truncation rule on the $i$-th gradient component involving ${a}_i^T{x}=\psi_i$, where the red dot denotes the solution ${x}$ and the black one is the origin. Hyperplanes ${a}_i^T{z}=\psi_i$ and ${a}_i^T{z}=0$ (of ${z}\in{R}^n$) passing through points ${z}={x}$ and ${z}={0}$, respectively, are shown.
 ~~~
 
