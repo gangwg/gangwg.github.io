@@ -13,7 +13,7 @@ at the University of Minnesota,
 working with 
 #I am a member of the [http://spincom.umn.edu SPiNCOM] 
 #I am a member of the SPiNCOM group directed by 
-Prof. [http://spincom.umn.edu/georgios/ Georgios B. Giannakis], where I obtained a Ph.D. degree in 2018. I have also earned a Ph.D. degree in Control Science and Engineering, and a B.Eng. degree in Electrical Engineering and Automation, both from #[http://www.bit.edu.cn Beijing Institute of Technology], Beijing, China.
+Prof. [http://spincom.umn.edu/georgios/ Georgios B. Giannakis], where I obtained a Ph.D. degree in 2018. I have also earned a Ph.D. degree in Control Science and Engineering under the supervision of Prof. [https://zh.wikipedia.org/wiki/陈杰_(学者) Jie Chen], and a B.Eng. degree in Electrical Engineering and Automation, both from the [http://www.bit.edu.cn Beijing Institute of Technology], Beijing, China.
 
 ~~~
 
@@ -52,19 +52,20 @@ E-mail: gangwang *AT* umn.edu.
 
 == Recent updates
 - 11/2019: Received the *Excellent Doctoral Dissertation Award* from the Chinese Association of Automation (CAA). This award recognizes excellent thesis research by doctoral candidates in the field of automation in China; presented annually to up to ten authors.
-- 10/2019: Paper "Learning Connectivity and Higher-Order Interactions in Radial Distribution Grids" submitted to *Proc. of Intl. Conf. on Acoustics, Speech, and Signal Process.*, May 2020 [https://arxiv.org/pdf/1911.03072.pdf (pdf)]
-- 10/2019: Check our paper "Finite-Sample Analysis of Decentralized Temporal-Difference Learning with Linear Function Approximation", which provides finite-time error bounds for decentralized temporal-difference learning from Markovian data samples [https://arxiv.org/pdf/1911.00934.pdf (pdf)]
-- 10/2019: Paper "Two-Timescale Voltage Control in Distribution Grids Using Deep Reinforcement Learning" was accepted to the *IEEE Transactions on Smart Grid*
-- 9/2019: Paper "Resonant Beam Communications: Principles and Designs" was accepted to the *IEEE Communications Magazine*
+- 11/2019: Served as a TPC member of the 2019 IEEE International Workship on Computational Advances in Multi-Sensor Adaptive Processing (CAMSAP).
+- 10/2019: Paper "Learning Connectivity and Higher-Order Interactions in Radial Distribution Grids" submitted to International Conference on Acoustics, Speech, and Signal Processing, May 2020 [https://arxiv.org/pdf/1911.03072.pdf (pdf)].
+- 10/2019: Check our paper "Finite-Sample Analysis of Decentralized Temporal-Difference Learning with Linear Function Approximation", which provides finite-time error bounds for decentralized temporal-difference learning from Markovian data samples [https://arxiv.org/pdf/1911.00934.pdf (pdf)].
+- 10/2019: Paper "Two-Timescale Voltage Control in Distribution Grids Using Deep Reinforcement Learning" was accepted to the *IEEE Transactions on Smart Grid*.
+- 9/2019: Paper "Resonant Beam Communications: Principles and Designs" was accepted to the *IEEE Communications Magazine*.
 - 9/2019: Paper "Optimal Switching Data Injection Attacks and Countermeasures in Cyber-Physical Systems” was accepted to the *IEEE Transactions on Systems, Man, and Cybernetics: Systems*. 
 - 9/2019: Appointed as editorial board member of the [https://www.journals.elsevier.com/signal-processing Signal Processing] journal.
-- 9/2019: My first paper on reinforcement learning theory "A Multistep Lyapunov Approach for Finite-Time Analysis of Biased Stochastic Approximation". [https://arxiv.org/pdf/1909.04299.pdf (pdf)]
-- 8/2019: Presented our paper "Fast LAV Estimation via Composite Optimization" in the *Best Conference Papers* session at the 2019 IEEE Power and Energy Society General Meeting
-- 7/2019: Paper "Deep Reinforcement Learning for Adaptive Caching in Hierarchical Content Delivery Networks" was accepted to the *IEEE Transactions on Cognitive Communications and Networking*
-- 6/2019: Served as a TPC member of the *International Conference on Wireless Communications and Signal Processing*
-- 6/2019: Paper "Mobile Energy Transfer in Internet of Things" was accepted to the *IEEE Internet of Things Journal*
-- 5/2019: Paper "Real-Time Power System State Estimation and Forecasting via Deep Unrolled Neural Networks" was accepted to the *IEEE Transactions on Signal Processing*
-- 2/2019: Served as a TPC member of the *IEEE Data Science Workshop*
+- 9/2019: My first paper on reinforcement learning theory "A Multistep Lyapunov Approach for Finite-Time Analysis of Biased Stochastic Approximation" [https://arxiv.org/pdf/1909.04299.pdf (pdf)].
+- 8/2019: Presented our paper "Fast LAV Estimation via Composite Optimization" in the *Best Conference Papers* session at the 2019 IEEE Power and Energy Society General Meeting.
+- 7/2019: Paper "Deep Reinforcement Learning for Adaptive Caching in Hierarchical Content Delivery Networks" was accepted to the *IEEE Transactions on Cognitive Communications and Networking*.
+- 6/2019: Served as a TPC member of the *International Conference on Wireless Communications and Signal Processing*.
+- 6/2019: Paper "Mobile Energy Transfer in Internet of Things" was accepted to the *IEEE Internet of Things Journal*.
+- 5/2019: Paper "Real-Time Power System State Estimation and Forecasting via Deep Unrolled Neural Networks" was accepted to the *IEEE Transactions on Signal Processing*.
+- 2/2019: Served as a TPC member of the *IEEE Data Science Workshop*.
 - 1/2019: Paper "Robust and Scalable Power System State Estimation via Composite Optimization" was accepted to the *IEEE Transactions on Smart Grid*
 - 11/2018: Paper on nonlinear discriminative dimensionality reduction was presented in Asilomar
 - 11/2018: Paper "Robust Power System State Estimation from Rank-One Measurements" was accepted to the *IEEE Transactions on Control of Network Systems*
