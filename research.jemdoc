@@ -1,5 +1,5 @@
-# jemdoc: menu{MENU}{research.html}, showsource
- = Research
+# jemdoc: menu{MENU}{research.html}
+= Research
 
 
 My research interests include
@@ -27,7 +27,7 @@ algorithms; data- and model-based control
 The problem of solving systems of quadratic equations has a plethora of applications ranging from mixed linear regressions to the well-known phase retrieval. Under Gaussian random sampling\/feature vectors, we develop simple, scalable, and efficient iterative optimization algorithms that are able to solve a quadratic system when there are about as many equations as unknowns in linear time. It is known in statistical inference and learning that convex formulations are unbounded and thus sensitive to outliers, yet non-convex ones that are difficult to optimize lead to computationally more scalable and statistically more accurate solution algorithms. We formulate the problem of solving quadratic equations as a non-convex optimization, and develop two-stage iterative optimization algorithms, that consist of obtaining an orthogonality-promoting initialization first and refining the initialization via truncated\/stochastic gradient-type iterations. Empirically, our algorithms recover exactly any real-valued signals when the number of equations is about 3 times the number of unknowns, narrowing the gap from the information-theoretic measurement/unknown ratio 2.
 
 ~~~
-{}{img_left}{figures/irate.jpg}{alt text}{440}{340} 
+{}{img_left}{figures/irate.jpg}{alt text}{400}{310} 
 #{}{img_left}{figures/crate.jpg}{alt text}{440}{340}
 ~~~
 
@@ -40,7 +40,7 @@ Multiview canonical correlation analysis (MCCA)seeks latent low-dimensional rep
 
 
 ~~~
-{}{img_left}{figures/uci.pdf}{alt text}{440}{340} 
+{}{img_left}{figures/uci.pdf}{alt text}{380}{310} 
 #{}{img_left}{figures/crate.jpg}{alt text}{440}{340}
 (a) Proposed GMCCA\n
 (b) Vanilla MCCA\n
@@ -72,7 +72,7 @@ Principal component analysis (PCA) is widely usedfor feature extraction and dim
 Neural networks with rectified linear unit (ReLU) activation functions (a.k.a. ReLU networks) have achieved great empirical success in various domains. Nonetheless, existing results for learning ReLU networks either pose assumptions on the underlying data distribution being, e.g., Gaussian, or require the network size or training size to be sufficiently large. In this context, the problem of learning a two-layer ReLU network is approached in a binary classification setting, where the data are linearly separable and a hinge loss criterion is adopted. Leveraging the power of random noise perturbation, this paper presents a novel stochastic gradient descent (SGD) algorithm, which can provably train any single-hidden-layer ReLU network to attain global optimality, despite the presence of infinitely many bad local minima, maxima, and saddle points in general. This result is the first of its kind, requiring no assumptions on the data distribution, training/network size, or initialization. Convergence of the resultant iterative algorithm to a global minimum is analyzed by establishing both an upper bound and a lower bound on the number of non-zero updates to be performed. Moreover, generalization guarantees are developed for ReLU networks trained with the novel SGD leveraging classic compression bounds. These guarantees highlight a key difference (at least in the worst case) between reliably learning a ReLU network as well as a leaky ReLU network in terms of sample complexity. Numerical tests using both synthetic data and real images validate the effectiveness of the algorithm and the practical merits of the theory.
 
 ~~~
-{}{img_left}{figures/relus.pdf}{alt text}{440}{340} 
+{}{img_left}{figures/relus.pdf}{alt text}{400}{310} 
 #{}{img_left}{figures/crate.jpg}{alt text}{440}{340}
 ~~~
 
@@ -104,7 +104,7 @@ medium- or large-size networks relative to existing alternatives.
 
 
 ~~~
-{}{img_left}{figures/tsg.pdf}{alt text}{440}{340} 
+{}{img_left}{figures/tsg.pdf}{alt text}{400}{310} 
 ~~~
 
 #~~~
@@ -124,9 +124,9 @@ Distribution microgrids are currently being challenged by voltage fluctuations d
 {}{img_left}{figures/movie.jpg}{alt text}{700}{340}
 ~~~
 
-. V. Kekatos, G. Wang, A.-J. Conejo, and G. B. Giannakis, "Stochastic Reactive Power Management in Microgrids with Renewables," /IEEE Trans. on Power Systems/, vol. 30, no. 6, pp. 3386–3395, Aug. 2014. [papers/tps2015kwcg.pdf (pdf)]
-. V. Kekatos, G. Wang, and G. B. Giannakis, "Stochastic Loss Minimization for Power Distribution Networks," in /IEEE North American Power Symposium (NAPS)/, Pullman, WA, Sep. 2014. [papers/naps2014kwg.pdf (pdf)]
-. G. Wang, V. Kekatos, A.-J. Conejo, and G. B. Giannakis, ‘‘Ergodic Energy Management Leveraging Resource Variability in Distribution Grids,’’ /IEEE Transactions on Power Systems/, to appear June 2016. [papers/tps2016wkcg.pdf (pdf)]
-. G. Wang, V. Kekatos, and G. B. Giannakis, ‘‘Stochastic Energy Management in Distribution Grids,’’ in /Proc. of Intl. Conf. on Acoustics, Speech and Signal Processing/, Shanghai, China, March 20-25, 2016. [papers/icassp2016wkg.pdf (pdf)]
+. *G. Wang*, V. Kekatos, A. J. Conejo, and G. B. Giannakis, ‘‘Ergodic Energy Management Leveraging Resource Variability in Distribution Grids,’’ /IEEE Transactions on Power Systems/, to appear June 2016. [papers/tps2016wkcg.pdf (pdf)]
+. V. Kekatos, *G. Wang*, A. J. Conejo, and G. B. Giannakis, "Stochastic Reactive Power Management in Microgrids with Renewables," /IEEE Trans. on Power Systems/, vol. 30, no. 6, pp. 3386–3395, Aug. 2014. [papers/tps2015kwcg.pdf (pdf)]
+. V. Kekatos, *G. Wang*, and G. B. Giannakis, "Stochastic Loss Minimization for Power Distribution Networks," in /IEEE North American Power Symposium (NAPS)/, Pullman, WA, Sep. 2014. [papers/naps2014kwg.pdf (pdf)]
+. *G. Wang*, V. Kekatos, and G. B. Giannakis, ‘‘Stochastic Energy Management in Distribution Grids,’’ in /Proc. of Intl. Conf. on Acoustics, Speech and Signal Processing/, Shanghai, China, March 20-25, 2016. [papers/icassp2016wkg.pdf (pdf)]
 
 #== Power system state estimation
