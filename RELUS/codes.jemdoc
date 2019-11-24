@@ -1,5 +1,5 @@
 = Matlab codes
-Gang Wang, Georgios B. Giannakis, and Jie Chen
+# Gang Wang, Georgios B. Giannakis, and Jie Chen
 
 Implementation of the noisy-injected stochastic gradient descent proposed in the paper
   ``Learning ReLU Networks on Linearly Separable Data: Algorithm, Optimality, and Generalization'' by G. Wang, G. B. Giannakis, and J. Chen.

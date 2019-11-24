@@ -1,10 +1,10 @@
 # jemdoc: menu{MENU}{index.html}
-= Solving Large-scale Systems of Random Quadratic Equations via Stochastic Truncated Amplitude Flow
-Gang Wang, Georgios B. Giannakis, and Jie Chen
+# = Solving Large-scale Systems of Random Quadratic Equations via Stochastic Truncated Amplitude Flow
+# Gang Wang, Georgios B. Giannakis, and Jie Chen
 
 #[https://jemnz.com/ Jacob Mattingley] ([www@jemnz.com])
 ~~~
-{}{img_left}{pr1000r.pdf}{alt text}{440}{340}
+{}{img_left}{figures/pr1000r.jpg}{alt text}{440}{340}
 Given observed data $\{\psi_i\}_{i=1}^m$ and feature vectors $\{a_i\in R^n/C^n\}_{i=1}^m$, our goal is to solve for $x$ a system of (phaseless) quadratic equations
 $\psi_i\approx |\langle a_i,x\rangle|$, $1\le i\le m$.
 

@@ -1,105 +1,0 @@
-{\rtf1\ansi\ansicpg1252\cocoartf1404\cocoasubrtf470
-{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
-{\colortbl;\red255\green255\blue255;}
-\margl1440\margr1440\vieww10800\viewh8400\viewkind0
-\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
-
-\f0\fs24 \cf0 # jemdoc: menu\{MENU\}\{contactme.html\}, showsource\
-= Solving Systems of Random Quadratic Equations via Truncated Amplitude Flow\
-== Gang Wang, G. B. Giannakis, and Y. C. Eldar\
-\
-Our method adopts the /amplitude-based/ cost function and proceeds in two stages: In stage one, we introduce an /orthogonality-promoting/ initialization that is obtained with a few simple power iterations. Stage two refines the initial estimate by successive updates of scalable /truncated generalized gradient iterations/. \
-\
-== Orthogonality-promoting initialization\
-Leveraging the Strong Law of Large Numbers (SLLN), spectral initialization methods estimate $x$ as the (appropriately scaled) leading eigenvector of $Y:=\\frac\{1\}\{m\}\\sum_\{i\\in\{T\}_0\}y_i\{a\}_i\{a\}_i^T$, where $\{T\}_0$ is an index set accounting for possible data truncation. As asserted in TWF paper, each summand $(\{a\}_i^T\{x\})^2\{a\}_i\{a\}_i^T$ follows a heavy-tail probability density function lacking a moment generating function. This causes major performance degradation especially when the number of measurements is small. Instead of spectral initializations, we shall take another route to bypass this hurdle. To gain intuition for our initialization, \
- a motivating example is presented first that reveals fundamental characteristics of high-dimensional random vectors.\
-\
-~~~\
-\{\}\{img_left\}\{figures/inner.pdf\}\{alt text\}\{440\}\{340\}\
-/A curious experiment:/ Fixing any nonzero vector $\{x\}\\in\{R\}^\{n\}$, generate data $\\psi_i=|\\langle \{a\}_i,\{x\}\\rangle|$ using i.i.d. $\{a\}_i\\sim\{N\}(\{0\},\{I\}_n)$, $1\\le i\\le m$. Then evaluate the following squared normalized inner-product \
-\\(\\label\{eq:nip\}\
-	\\cos^2\\theta_i:= \\frac\{\\left|\\langle \{a\}_i,\{x\}\\rangle\\right|^2\}\{\\|\{a\}_i\\|^2\\|\{x\}\\|^2\}=\\frac\{\\psi_i^2\}\{\\|\{a\}_i\\|^2\\|\{x\}\\|^2\},\\quad1\\le i\\le m,\
-\\)\
-where $\\theta_i$ is the angle between vectors $\{a\}_i$ and $\{x\}$.   \
-Consider ordering all $\\\{\\cos^2\\theta_i\\\}$ in an ascending fashion, and collectively \
-denote them as $\{\\xi\}:=[\\cos^2\\theta_\{[m]\}~\\cdots~\\cos^2\\theta_\{[1]\}]^T$ with \
-$\\cos^2\\theta_\{[1]\}\
-%\\ge\\cos^2\\theta_\{[2]\}\
-\\ge\\cdots\\ge\\cos^2\\theta_\{[m]\}$. Figure~\\ref\{fig:inner\} plots the ordered entries in $\{\\xi\}$ for $m/n$ varying by $2$ from $2$ to $10$ \
-%$m=2n$, $4n$, $6n$, $8n$, and $10n$ \
-with $n=1,000$. Observe that almost all \
-$\\left\\\{\{a\}_i\\right\\\}$ vectors have a squared normalized inner-product with $\{x\}$ \
-smaller than $10^\{-2\}$, while half of the inner-products are less than $10^\{-3\}$, which implies that $\{x\}$ is nearly orthogonal to a large number of \
-$\{a\}_i$'s.  \
-\
-~~~\
-\
-This example corroborates the folklore that random vectors in high-dimensional spaces are almost always nearly orthogonal to each other.\
-This inspired us to pursue an /orthogonality-promoting initialization method/. Our key idea is to approximate $\{x\}$ by a vector that is most orthogonal to a subset of vectors $\\\{\{a\}_i\\\}_\{i\\in\{I\}_0\}$, where $\{I\}_0$ is an index set with cardinality $|\{I\}_0|<m$ that includes indices of the smallest \
-squared normalized \
-inner-products $\\left\\\{\\cos^2\\theta_i\\right\\\}$.\
-\
-\
-\
-Using data $\\left\\\{(\{a\}_i;\\,\\psi_i)\\right\\\}$, evaluate $\\cos^2\\theta_i$ for each pair $\{x\}$ and $\{a\}_i$.\
-Instrumental for the ensuing derivations is noticing from the inherent near-orthogonal property of high-dimensional random vectors \
-that the summation of $\\cos^2\\theta_i$ over indices $i\\in\{I\}_0$ should be very small. It holds that $\\sum_\{i\\in\{I\}_0\}\\cos^2\\theta_i=\\sum_\{i\\in\{I\}_0\}\\frac\{|\\langle\{a\}_i,\{x\}\\rangle|^2\}\{\\|\{a\}_i\\|^2\\|\{x\}\\|^2\}=\\frac\{\{x\}\}\{\\|\{x\}\\|\}\\Big(\\sum_\{i\\in\{I\}_0\}\\frac\{\{a\}_i\{a\}_i^T\}\{\\|\{a\}_i\\|^2\}\\Big)\\frac\{\{x\}\}\{\\|\{x\}\\|\}$ is negligibly small, yet $\{x\}$ is unknown. Therefore, \
-a meaningful approximation of $\{x\}$, henceforth denoted by $\{z\}_0\\in\{R\}^n$, can be obtained via minimizing the former with $\{x\}$ replaced by the optimization variable $\{z\}$, i.e.,   \
-\\(\
-	\{\\text\{minimize\}\\atop \\|\{z\}\\|=1\}~~\{z\}^T\\left(\\frac\{1\}\{|\{I\}_0|\}\\sum_\{i\\in\{I\}_0\}\\frac\{\{a\}_i\{a\}_i^T\}\{\\|\{a\}_i\\|^2\}\\right)\{z\}\
-\\)\
-which amounts to finding the smallest eigenvalue and the associated eigenvector of \
-$\{Y\}_0:=\\frac\{1\}\{|\{I\}_0|\}\\sum_\{i\\in\{I\}_0\}\\frac\{\{a\}_i\{a\}_i^T\}\{\\|\{a\}_i\\|^2\}\\ge \{0\}$.  \
-\
-\
-\
-== Truncated amplitude based gradient iterations\
-Precisely, if $\{z\}_t$ and $\{x\}$ lie in different sides of the hyperplane $\{a\}_i^T\{z\}=0$, then the sign of $\{a\}_i^T\{z\}_t$ will be different than that of $\{a\}_i^T\{x\}$; that is, $\\frac\{\{a\}_i^T\{x\}\}\{|\{a\}_i^T\{x\}|\}\\ne \\frac\{\{a\}_i^T\{z\}\}\{|\{a\}_i^T\{z\}|\}$. Specifically, one can re-write the $i$-th generalized gradient component as\
-\\(\
-	\\partial \\ell_i(\{z\})=\\Big(\{a\}_i^T\{z\}-\\psi_i\\frac\{\{a\}_i^T\{z\}\}\{|\{a\}_i^T\{z\}|\}\\Big)\{a\}_i\
-	=\\Big(\{a\}_i^T\{z\}-|\{a\}_i^T\{x\}|\\cdot\\frac\{\{a\}_i^T\{x\}\}\{|\{a\}_i^T\{x\}|\}\\Big)\{a\}_i+\\Big(\\frac\{\{a\}_i^T\{x\}\}\{|\{a\}_i^T\{x\}|\}-\\frac\{\{a\}_i^T\{z\}\}\{|\{a\}_i^T\{z\}|\}\\Big)\\psi_i\{a\}_i=\{a\}_i\{a\}_i^T\{h\}+\\underbrace\{\\Big(\\frac\{\{a\}_i^T\{x\}\}\{|\{a\}_i^T\{x\}|\}-\\frac\{\{a\}_i^T\{z\}\}\{|\{a\}_i^T\{z\}|\}\\Big)\\psi_i\{a\}_i\}_\{\\buildrel\\triangle\\over\
-	 =\\,\{r\}_i\}\
-%	\\buildrel\\triangle\\over= \{a\}_i\{a\}_i^T\{h\}+\{r\}_i\
-%		&=\{a\}_i\{a\}_i^T\{h\}+\{\\Big(\\frac\{\{a\}_i^T\{x\}\}\{|\{a\}_i^T\{x\}|\}-\\frac\{\{a\}_i^T\{z\}\}\{|\{a\}_i^T\{z\}|\}\\Big)\\psi_i\{a\}_i\}\
-%	\\buildrel\\triangle\\over = \{a\}_i\{a\}_i^T\{h\}+\{r\}_i\
-	\\)\
-\
-where $\{h\}:=\{z\}-\{x\}$. \
-Intuitively, the SLLN asserts that averaging the first term $\{a\}_i\{a\}_i^T\{h\}$ over $m$ instances approaches $\{h\}$, which qualifies it as a desirable search direction. However, \
-certain generalized gradient entries involve erroneously estimated signs of $\{a\}_i^T\{x\}$; hence, nonzero $\{r\}_i$ terms exert a negative influence on the search direction $\{h\}$ by dragging the iterate away from $\{x\}$, and they typically have sizable magnitudes.\
-\
-~~~\
-\{\}\{img_left\}\{figures/circle.pdf\}\{alt text\}\{440\}\{360\}\
-The geometric understanding of the proposed truncation rule on the $i$-th gradient component involving $\{a\}_i^T\{x\}=\\psi_i$, where the red dot denotes the solution $\{x\}$ and the black one is the origin. Hyperplanes $\{a\}_i^T\{z\}=\\psi_i$ and $\{a\}_i^T\{z\}=0$ (of $\{z\}\\in\{R\}^n$) passing through points $\{z\}=\{x\}$ and $\{z\}=\{0\}$, respectively, are shown.\
-~~~\
-\
-Nevertheless, it is difficult or even impossible to check whether the sign of $\{a\}_i^T\{z\}_t$ equals  that of $\{a\}_i^T\{x\}$. Fortunately, as demonstrated in Fig.~\\ref\{fig:truncation\}, \
-most spurious generalized\
- gradient components (those corrupted by nonzero $\{r\}_i$ terms)  hover around the watershed hyperplane $\{a\}_i^T\{z\}_t=0$. For this reason, TAF includes only those components \
-having $\{z\}_t$ sufficiently away from its watershed, i.e., \
-\\vspace\{-.em\}\
-\\(\\label\{eq:large\}\
-	\{I\}_\{t+1\}:=\\left\\\{1\\le i\\le m\\left|\\frac\{|\{a\}_i^T\{z\}_t|\}\{|\{a\}_i^T\{x\}|\}\\ge \\frac\{1\}\{1+\\gamma\}\\right. \\right\\\},\\quad t\\ge 0 \
-\\)\
-for an appropriately selected threshold $\\gamma>0$. To be more specific, the light yellow color-coded area denoted by $\\xi_\{i\}^1$ in Figure above \
-signifies the truncation region of $\{z\}$, i.e.,  \
-if $\{z\}\\in\\xi_\{i\}^1$ obeying the condition above, the corresponding generalized gradient component $\\partial\\ell_i(\{z\};\\psi_i)$ will be thrown out. However, the truncation rule may mis-reject the `good' gradients if $\{z\}_t$ lies in the upper part of $\\xi_i^1$; and `bad' gradients may be missed as well if $\{z\}_t$ belongs to the spherical cap $\\xi_i^2$.  \
-Fortunately,  \
-the probabilities of the miss and the mis-rejection are provably very small, hence precluding a noticeable influence on the descent direction. Although not perfect, it turns out that \
-such a regularization rule succeeds in detecting and eliminating most corrupted generalized gradient components and hence maintaining a well-behaved search direction. \
-\
-~~~\
-\{\}\{img_left\}\{figures/tspx.pdf\}\{alt text\}\{700\}\{200\}\
-~~~\
-\
-~~~\
-\{\}\{img_left\}\{figures/opix.pdf\}\{alt text\}\{700\}\{200\}\
-~~~\
-\
-~~~\
-\{\}\{img_left\}\{figures/tafx.pdf\}\{alt text\}\{700\}\{200\}\
-~~~\
-\
-The recovered Milky Way Galaxy images after i) truncated spectral initialization (top); ii) orthogonality-promoting initialization (middle); and iii) $100$ TAF gradient iterations refining the orthogonality-promoting initialization (bottom), where $K=6$ masks were employed in our experiment. Specifically, the algorithm was run independently on each of the three bands. A number $100$ of power iterations were used to obtain an initialization, which was refined by $100$ gradient-type iterations. The relative errors after our orthogonality-promoting initialization and after $100$ TAF iterations are $0.6807$ and $9.8631\\times 10^\{-5\}$, respectively. In sharp contrast, TWF returns images of corresponding relative errors $1.3801$ and $1.3409$, which are far away from the ground truth. \
-\
-}

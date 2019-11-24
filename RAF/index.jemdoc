@@ -4,14 +4,14 @@
 
 #[https://jemnz.com/ Jacob Mattingley] ([www@jemnz.com])
 ~~~
-{}{img_left}{func400.pdf}{alt text}{460}{330}
+{}{img_left}{figures/func400.jpg}{alt text}{500}{550}
 
 To show the power of RAF in the high-dimensional regime, the amplitude-based least-squares loss function value $L(z)$ evaluated at the returned estimate $z^T$ for $400$ MC realizations is plotted (in negative logarithmic scale) in figure on the left, where the number of simulated noiseless measurements was set to be the information-theoretic limit, namely,  $a_i\sim\mathcal{N}(0,I_{5,000})$, and $m=2n-1=3,999$ for $n=2,000$. It is self-evident that our proposed RAF approach returns a solution of function value $L(z^T)$ smaller than $10^{-25}$ in all $400$ independent realizations even at this challenging information-theoretic limit condition. To the best of our knowledge, RAF is the first algorithm that empirically reconstructs any high-dimensional (say e.g., $n\ge 1,500$) signals exactly from an \emph{optimal number} of random quadratic equations, which also provides a positive answer to the question posed easier in the Introduction. 
 ~~~
 
 
 ~~~
-{}{img_left}{rratenew.pdf}{alt text}{450}{315}
+{}{img_left}{figures/rratenew.jpg}{alt text}{450}{315}
 
 The left figure compares the empirical success rate of five schemes 
 with the signal dimension being fixed at $n=1,000$ while the ratio
