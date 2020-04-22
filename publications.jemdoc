@@ -40,8 +40,8 @@ Click [https://scholar.google.com/citations?user=4MPZS5wAAAAJ&hl=en here] to see
 
 
 == Conference/Workshop Papers
-. *G. Wang* and G. B. Giannakis, ``Finite-Time Error Bounds for Biased Stochastic Approximation Algorithms with Application to Q-Learning,'' /Proc. of 23rd Intl. Conf. on Artificial Intelligence and Statistics/, Palermo, Italy, June 3-5, 2020.
-. J. Sun, *G. Wang*, G. B. Giannakis, Q. Yang, and Z. Yang, ``Finite-Sample Analysis of Decentralized Temporal-Difference Learning with Linear Function Approximation,'' /Proc. of 23rd Intl. Conf. on Artificial Intelligence and Statistics/, Palermo, Italy, June 3-5, 2020. *(The first two authors contributed equally)*
+. *G. Wang* and G. B. Giannakis, ``Finite-Time Error Bounds for Biased Stochastic Approximation Algorithms with Application to Q-Learning,'' /Proc. of 23rd Intl. Conf. on Artificial Intelligence and Statistics/, Palermo, Italy, June 3-5, 2020. [papers/aistats2020q.pdf (pdf)]
+. J. Sun, *G. Wang*, G. B. Giannakis, Q. Yang, and Z. Yang, ``Finite-Sample Analysis of Decentralized Temporal-Difference Learning with Linear Function Approximation,'' /Proc. of 23rd Intl. Conf. on Artificial Intelligence and Statistics/, Palermo, Italy, June 3-5, 2020. [papers/aistats2020td.pdf (pdf)]
 . Q. Yang, *G. Wang*, A. Sadeghi, and G. B. Giannakis, ``Two-Timescale Voltage Regulation in Distribution Grids Using Deep Reinforcement Learning,'' /Proc. of Intl. Conf. on Communications, Control, and Computing Technol. for Smart Grids/, Beijing, P. R. China, October 21-24, 2019.
 #. *G. Wang*, G. B. Giannakis, and J. Chen, ``Learning ReLU Networks on Linearly Separable Data: Algorithm, Optimality, and Generalization,'' /Proc. of Intl. Conf. on Machine Learning/, Long Beach, CA, June 16-18, 2019 (submitted).
 . *G. Wang*, G. B. Giannakis, and J. Chen, ``Fast Least-Absolute-Value Solver via Composite Optimization,'' /Proc. of IEEE PES General Mtg./, Atlanta, GA, August 4-8, 2019 (*Best Conference Paper*).
